@@ -1,5 +1,9 @@
 {
   "name": "sushimura",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yonglee/sushimura.git"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
