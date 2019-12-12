@@ -1,14 +1,17 @@
-import React from 'react'
-import Head from 'next/head'
-import Nav from '../components/nav'
+import React from "react";
+// import Head from "next/head";
+import Nav from "../components/nav";
+import "../styles/global.scss";
+import Head from "../components/Head";
+
+const seoHead = {
+  title: "Home",
+  description: "Test Home page"
+};
 
 const Home = () => (
   <div>
-    <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
+    <Head {...seoHead} />
     <Nav />
 
     <div className="hero">
@@ -36,7 +39,7 @@ const Home = () => (
       </div>
     </div>
 
-    <style jsx>{`
+    {/* <style jsx>{`
       .hero {
         width: 100%;
         color: #333;
@@ -81,8 +84,8 @@ const Home = () => (
         font-size: 13px;
         color: #333;
       }
-    `}</style>
+    `}</style> */}
   </div>
-)
+);
 
-export default Home
+export default Home;

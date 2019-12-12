@@ -1,0 +1,10 @@
+.nav {
+  background: yellowgreen;
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    li {
+      margin-right: 1rem;
+    }
+  }
+}
