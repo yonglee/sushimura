@@ -1,23 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Head from "../components/Head";
-import Nav from "../components/nav";
 
 const seoHead = {
-  title: "About",
-  description: "Test About page"
+  title: "Menu",
+  description: "Test Menu Page"
 };
 
-const about = props => {
+const menu = props => {
   return (
     <div>
       <Head {...seoHead} />
-      <Nav />
-      About Page
+      Menu
     </div>
   );
 };
 
-about.propTypes = {};
+menu.propTypes = {};
 
-export default about;
+export default menu;

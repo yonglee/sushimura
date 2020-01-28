@@ -1,10 +1,28 @@
 .nav {
-  background: yellow;
+  // background: rgba(0, 0, 0, 0.9);
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  height: 60px;
   ul {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    padding: 5px 10px;
     li {
       margin-right: 1rem;
+      padding: 5px 10px;
+      a {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 5px 10px;
+        color: #fff;
+      }
     }
   }
 }
