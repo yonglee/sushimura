@@ -1,5 +1,6 @@
 export default [
   {
+    id: 0,
     title: "Appetizer",
     desc: "Extra sauce: $0.50",
     desc2: "",
@@ -113,6 +114,7 @@ export default [
     ]
   },
   {
+    id: 1,
     title: "BBQ Combo",
     desc: "Served with miso soup & rice",
     desc2: "",
@@ -142,6 +144,7 @@ export default [
     ]
   },
   {
+    id: 2,
     title: "Teriyaki",
     desc: "Served with miso soup & rice",
     desc2: "",
@@ -220,6 +223,7 @@ export default [
     ]
   },
   {
+    id: 3,
     title: "Lunch Box",
     desc: "11:00 - 3:30, No substitutions",
     desc2: "* Served with miso soup, rice optional",
@@ -258,6 +262,7 @@ export default [
     ]
   },
   {
+    id: 4,
     title: "Dinner Box",
     desc: "No substitutions",
     desc2: "* Served with miso soup, ebi / vegetable sunomono, rice optional",
@@ -312,6 +317,7 @@ export default [
     ]
   },
   {
+    id: 5,
     title: "Donburi",
     desc: "",
     desc2: "",
@@ -369,6 +375,7 @@ export default [
     ]
   },
   {
+    id: 6,
     title: "Noodles",
     desc: "* Extra $2.0 for udon noodles substitution",
     desc2: "",
@@ -434,6 +441,7 @@ export default [
     ]
   },
   {
+    id: 7,
     title: "Udon",
     desc: "",
     desc2: "",
@@ -484,6 +492,7 @@ export default [
     ]
   },
   {
+    id: 8,
     title: "Party Tray",
     desc: "",
     desc2: "",
@@ -547,6 +556,7 @@ export default [
     ]
   },
   {
+    id: 9,
     title: "Sashimi",
     desc: "",
     desc2: "",
@@ -653,6 +663,7 @@ export default [
     ]
   },
   {
+    id: 10,
     title: "Nigiri",
     desc: "* Price per 1pc",
     desc2: "",
@@ -717,6 +728,7 @@ export default [
     ]
   },
   {
+    id: 11,
     title: "Soup & Salad",
     desc: "* Price per 1pc",
     desc2: "",
@@ -802,6 +814,7 @@ export default [
     ]
   },
   {
+    id: 12,
     title: "Tempura",
     desc: "",
     desc2: "",
@@ -873,6 +886,7 @@ export default [
     ]
   },
   {
+    id: 13,
     title: "Special Roll",
     desc: "",
     desc2: "",
@@ -1048,6 +1062,7 @@ export default [
     ]
   },
   {
+    id: 14,
     title: "Boat",
     desc: "",
     desc2: "",
@@ -1080,6 +1095,7 @@ export default [
     ]
   },
   {
+    id: 15,
     title: "Sushi Combo",
     desc: "",
     desc2: "",
@@ -1181,6 +1197,7 @@ export default [
     ]
   },
   {
+    id: 16,
     title: "Sushi Roll and Cones",
     desc: "* Extra $2.50 for deep frying any roll",
     desc2: "",

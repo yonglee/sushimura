@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import uuid from "uuid";
 import PropTypes from "prop-types";
+import SliderStyles from "../styles/SliderStyles";
 
 const slideData = [
   {
@@ -34,36 +35,33 @@ const Slider = props => {
     cards: slideData,
     card: slideData[0]
   });
-  const sliderRef = useRef(null);
+
   const { cards, card } = slides;
 
   const prevButton = () => {
     const newIndex = card.index - 1;
-    if (newIndex >= 0) {
+    if (newIndex === 0) {
       setSlides({
-        slides: [...slideData, ...slideData],
+        cards: [...slideData],
         card: slideData[newIndex]
       });
     } else {
-      setSlides({ ...slides, card: slideData[cards.length - 1] });
+      setSlides({ cards: [...slideData], card: slideData[cards.length - 1] });
     }
   };
   const nextButton = () => {
     const newIndex = card.index + 1;
     if (newIndex < cards.length) {
-      setSlides({ ...slides, card: slideData[newIndex] });
+      setSlides({ cards: [...slideData], card: slideData[newIndex] });
     } else {
-      setSlides({ ...slides, card: slideData[0] });
+      setSlides({ cards: [...slideData], card: slideData[0] });
     }
   };
 
-  console.log(slides);
-
   return (
-    <div className="slider">
+    <SliderStyles>
       <div
         className="slider-container"
-        ref={sliderRef}
         // style={{
         //   transform: `translateX(-${card.index * (100 / cards.length)}%)`
         // }}
@@ -78,9 +76,13 @@ const Slider = props => {
           <Slide key={uuid.v4()} card={slide} />
         ))}
       </div>
-      <i className="fa fa-chevron-left" onClick={prevButton} />
-      <i className="fa fa-chevron-right" onClick={nextButton} />
-    </div>
+      <button className="left-btn slider-btn">
+        <i className="fa fa-chevron-left" onClick={prevButton} />
+      </button>
+      <button className="right-btn slider-btn">
+        <i className="fa fa-chevron-right" onClick={nextButton} />
+      </button>
+    </SliderStyles>
   );
 };
 

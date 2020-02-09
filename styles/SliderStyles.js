@@ -1,6 +1,8 @@
-.slider {
+import styled from "styled-components";
+
+const SliderStyles = styled.div`
   position: relative;
-  // overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
   height: 100vh;
   -webkit-backface-visibility: hidden;
@@ -20,29 +22,24 @@
         height: 100vh;
       }
     }
-    .active {
-    }
-    // &.prev {
-    //   transform: translateX(100%);
-    // }
-    // &.next {
-    //   transform: translateX(-100%);
-    // }
   }
-  .fa.fa-chevron-left,
-  .fa.fa-chevron-right {
-    color: #000;
+  .slider-btn {
     z-index: 999;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 30px;
+    &.left-btn {
+      left: 5%;
+    }
+    &.right-btn {
+      right: 5%;
+    }
+    .fa.fa-chevron-left,
+    .fa.fa-chevron-right {
+      color: #fff;
+      font-size: 30px;
+    }
   }
-  .fa.fa-chevron-left {
-    left: 5%;
-  }
-  .fa.fa-chevron-right {
-    right: 5%;
-  }
-}
+`;
+
+export default SliderStyles;

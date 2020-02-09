@@ -14,9 +14,9 @@ class MyDocument extends Document {
     return (
       <Html lang="en-CA">
         <Head>
-          {/* <meta charSet="UTF-8" /> */}
-          {/* <link rel="icon" href="/favicon.ico" /> */}
-          {/* <meta name="viewport" content="width=device-width, initial-scale=1" /> */}
+          <meta charSet="UTF-8" />
+          <link rel="icon" href="/favicon-32x32.png" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
           {/* <link rel="icon" sizes="192x192" href="/static/touch-icon.png" />
@@ -26,7 +26,7 @@ class MyDocument extends Document {
             href="/static/favicon-mask.svg"
             color="#49B882"
           /> */}
-          <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+          <link rel="icon" type="image/x-icon" href="/favicon-32x32.png" />
           <link href="/fontawesome5112/css/all.min.css" rel="stylesheet" />
         </Head>
         <body>

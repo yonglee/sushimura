@@ -9,10 +9,12 @@ const seoHead = {
 
 const contact = props => {
   return (
-    <div>
+    <>
       <Head {...seoHead} />
-      Contact
-    </div>
+      <div className="heading-box">
+        <h1 className="heading">Contact US!!!</h1>
+      </div>
+    </>
   );
 };
 
