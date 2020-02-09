@@ -22,33 +22,32 @@ const MenuNav = ({ path }) => {
 
   return (
     <MenuNavStyles>
-      <div className="menu-nav-box-outer" ref={outer}>
-        <ul
-          className="menu-nav-box"
-          // style={{ top: `-${menuHeight.scrollbar}` }}
-        >
-          {menuNavData.map(link => (
-            <li key={uuid.v4()}>
-              <Link
-                as={`/m/${link.title.toLowerCase().replace(" ", "-")}`}
-                href={`/menus?title=${link.title
-                  .toLowerCase()
-                  .replace(" ", "-")}`}
-              >
-                <a
-                  className={
-                    useRouter().asPath ===
-                    `/m/${link.title.toLowerCase().replace(" ", "-")}`
-                      ? "active"
-                      : ""
-                  }
+      <div className="menunav-container" ref={outer}>
+        <div className="menunav-absolute">
+          <ul>
+            {menuNavData.map(link => (
+              <li key={uuid.v4()}>
+                <Link
+                  as={`/m/${link.title.toLowerCase().replace(" ", "-")}`}
+                  href={`/menus?title=${link.title
+                    .toLowerCase()
+                    .replace(" ", "-")}`}
                 >
-                  {link.title}
-                </a>
-              </Link>
-            </li>
-          ))}
-        </ul>
+                  <a
+                    className={
+                      useRouter().asPath ===
+                      `/m/${link.title.toLowerCase().replace(" ", "-")}`
+                        ? "active"
+                        : ""
+                    }
+                  >
+                    {link.title}
+                  </a>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </MenuNavStyles>
   );

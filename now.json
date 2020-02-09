@@ -2,5 +2,6 @@
   "name": "yonglee.ca",
   "version": 2,
   "builds": [{ "src": "next.config.js", "use": "@now/next" }],
+  "routes": [{ "src": "/m/(.*)", "dest": "/menus?title=$1" }],
   "alias": "yonglee.ca"
 }
