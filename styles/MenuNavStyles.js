@@ -87,6 +87,7 @@ const MenuNavStyles = styled.nav`
             z-index: 2;
             position: relative;
             font-weight: 600;
+            border: 1px solid #000;
             div {
               background: rgba(0, 0, 0, 1);
               padding: 6px 12px;
