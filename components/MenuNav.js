@@ -100,22 +100,6 @@ const MenuNav = ({ path }) => {
         </button>
       </div>
     </MenuNavStyles>
-    // <div className="menunav">
-    //   <div className="menunav-container" ref={outer}>
-    //     <button className="left-button button" onClick={handleLeftClick}>
-    //       <i className="fa fa-chevron-left" />
-    //     </button>
-    //     <div className="menunav-scroller" ref={scrollbarRef}>
-    //       <ul>
-    //         {menuNavData.map(link => (
-    //           <MenuNavItem key={uuid.v4()} link={link} />
-    //         ))}
-    //       </ul>
-    //     </div>
-    //     <button className="right-button button" onClick={handleRightClick}>
-    //       <i className="fa fa-chevron-right" />
-    //     </button>
-    //   </div>
   );
 };
 
