@@ -61,16 +61,9 @@ const MenuNavStyles = styled.nav`
           backface-visibility: hidden;
           border: 1px solid ${props => props.theme.grey2};
           transition: all 500ms linear;
-          &:before {
-            background: rgba(0, 0, 0, 0.2);
-            content: "";
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1;
-          }
+          width: 120px;
+          height: 80px;
+
           a {
             width: 120px;
             height: 80px;
@@ -84,10 +77,16 @@ const MenuNavStyles = styled.nav`
             z-index: 2;
             position: relative;
             font-weight: 600;
+            img {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+            }
             div {
               background: rgba(0, 0, 0, 1);
               padding: 6px 12px;
               border-radius: 4px;
+              z-index: 3;
             }
           }
           &.active {
