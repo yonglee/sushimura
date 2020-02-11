@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 // import global from "../styles/global.scss";
 // import "../styles/index.scss";
 import { useRouter } from "next/router";
 import Nav from "./nav";
 import MenuNav from "../components/MenuNav";
-import { unstable_renderSubtreeIntoContainer } from "react-dom";
 
 const theme = {
   fontNanum: "Nanum Gothic, sans-serif",
@@ -137,6 +136,7 @@ const Main = styled.div`
 `;
 
 const Page = props => {
+  useEffect(() => {}, []);
   return (
     <ThemeProvider theme={theme}>
       <Wrapper>
@@ -147,5 +147,36 @@ const Page = props => {
     </ThemeProvider>
   );
 };
+// const Page = props => {
+//   useEffect(() => {}, []);
+
+//   const MainInner = () => <>{props.children}</>;
+
+//   const MenuMain = () => (
+//     <>
+//       <div className="menunav">
+//         <MenuNav />
+//       </div>
+//       <div className="page">{props.children}</div>
+//     </>
+//   );
+//   console.log(useRouter().pathname);
+//   return (
+//     <ThemeProvider theme={theme}>
+//       <Wrapper>
+//         <Nav />
+//         <Main>
+//           {useRouter().pathname === "/menus" ||
+//           useRouter().pathname === "menu" ? (
+//             <MenuMain />
+//           ) : (
+//             <MainInner />
+//           )}
+//         </Main>
+//       </Wrapper>
+//       <GlobalStyle />
+//     </ThemeProvider>
+//   );
+// };
 
 export default Page;

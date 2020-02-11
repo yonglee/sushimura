@@ -23,7 +23,7 @@ const NavStyles = styled.nav`
 
       a {
         font-size: 18px;
-        font-weight: 400;
+        font-weight: 600;
         padding: 5px 10px;
         color: #1b1b1b;
       }

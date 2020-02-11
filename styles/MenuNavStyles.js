@@ -37,6 +37,7 @@ const MenuNavStyles = styled.nav`
       }
     }
     .menunav-scroller {
+      -webkit-overflow-scrolling: touch;
       overflow: hidden;
       overflow-x: auto;
       position: relative;
@@ -51,16 +52,18 @@ const MenuNavStyles = styled.nav`
         flex-wrap: nowrap;
         position: relative;
         background: transparent;
+        height: 80px;
         li {
           margin-left: 2px;
           margin-right: 2px;
           position: relative;
           height: 100%;
-          transform: translateZ(0);
+          /* transform: translateZ(0);
           perspective: 1000;
-          backface-visibility: hidden;
+          backface-visibility: hidden; */
           border: 1px solid ${props => props.theme.grey2};
           transition: all 500ms linear;
+          background: #9e9e9e;
           &:before {
             background: rgba(0, 0, 0, 0.2);
             content: "";
@@ -96,7 +99,8 @@ const MenuNavStyles = styled.nav`
               background: rgba(0, 0, 0, 0);
             }
             a {
-              color: #000;
+              /* color: #000; */
+              color: #8b0000;
               div {
                 background: ${props => props.theme.papayaWhip};
               }

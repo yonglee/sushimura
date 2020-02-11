@@ -8,29 +8,34 @@ import $ from "jquery";
 import MenuNavStyles from "../styles/MenuNavStyles";
 // import "../styles/menunav.scss";
 
-const MenuNavItem = ({ link }) => (
-  <li
-    className={
-      useRouter().asPath === `/m/${link.title.toLowerCase().replace(" ", "-")}`
-        ? "active"
-        : ""
-    }
-    style={{
-      backgroundImage: `url('${link.image}')`,
-      backgroundSize: "120px 80px",
-      backgroundRepeat: "no-repeat"
-    }}
-  >
-    <Link
-      as={`/m/${link.title.toLowerCase().replace(" ", "-")}`}
-      href={`/menus?title=${link.title.toLowerCase().replace(" ", "-")}`}
+const MenuNavItem = ({ link }) => {
+  useEffect(() => {}, []);
+  return (
+    <li
+      className={
+        useRouter().asPath ===
+        `/m/${link.title.toLowerCase().replace(" ", "-")}`
+          ? "active"
+          : ""
+      }
+      style={{
+        backgroundImage: `url('${link.image}')`,
+        backgroundSize: "100% 100%",
+        backgroundPosition: "center center",
+        backgroundRepeat: "no-repeat"
+      }}
     >
-      <a>
-        <div>{link.title}</div>
-      </a>
-    </Link>
-  </li>
-);
+      <Link
+        as={`/m/${link.title.toLowerCase().replace(" ", "-")}`}
+        href={`/menus?title=${link.title.toLowerCase().replace(" ", "-")}`}
+      >
+        <a>
+          <div>{link.title}</div>
+        </a>
+      </Link>
+    </li>
+  );
+};
 
 const MenuNav = ({ path }) => {
   const outer = useRef(null);
@@ -46,8 +51,18 @@ const MenuNav = ({ path }) => {
       scrollbar: outer.current.scrollHeight - outer.current.offsetHeight,
       scrollbarWidth: outer.current.clientWidth - 62
     });
-    return () => {};
+    window.addEventListener("resize", onResize);
+    return () => {
+      window.removeEventListener("resize", onResize);
+    };
   }, []);
+
+  const onResize = () => {
+    setMenuHeight({
+      ...menuHeight,
+      scrollbarWidth: outer.current.clientWidth - 62
+    });
+  };
 
   const handleLeftClick = () => {
     $(".menunav-scroller").animate(
@@ -75,9 +90,21 @@ const MenuNav = ({ path }) => {
         </button>
         <div className="menunav-scroller" ref={scrollbarRef}>
           <ul>
-            {menuNavData.map(link => (
+            {/* {menuNavData.map(link => (
               <MenuNavItem key={uuid.v4()} link={link} />
-            ))}
+            ))} */}
+            <MenuNavItem link={menuNavData[0]} />
+            <MenuNavItem link={menuNavData[1]} />
+            <MenuNavItem link={menuNavData[2]} />
+            <MenuNavItem link={menuNavData[3]} />
+            <MenuNavItem link={menuNavData[4]} />
+            <MenuNavItem link={menuNavData[5]} />
+            <MenuNavItem link={menuNavData[6]} />
+            <MenuNavItem link={menuNavData[7]} />
+            <MenuNavItem link={menuNavData[8]} />
+            <MenuNavItem link={menuNavData[9]} />
+            <MenuNavItem link={menuNavData[10]} />
+            <MenuNavItem link={menuNavData[11]} />
           </ul>
         </div>
         <button className="right-button button" onClick={handleRightClick}>
