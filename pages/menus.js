@@ -1,5 +1,7 @@
 import { withRouter } from "next/router";
+import dynamic from "next/dynamic";
 import MenuNav from "../components/MenuNav";
+// const MenuNav = dynamic(() => import("../components/MenuNav"), { ssr: false });
 
 const Menus = props => {
   return (

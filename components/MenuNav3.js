@@ -6,7 +6,6 @@ import menuNavData from "../data/menuNavData";
 import { useRouter } from "next/router";
 import $ from "jquery";
 import MenuNavStyles from "../styles/MenuNavStyles";
-// import "../styles/menunav.scss";
 
 const MenuNavItem = ({ link }) => (
   <li
@@ -15,17 +14,14 @@ const MenuNavItem = ({ link }) => (
         ? "active"
         : ""
     }
-    style={{
-      backgroundImage: `url('${link.image}')`,
-      backgroundSize: "120px 80px",
-      backgroundRepeat: "no-repeat"
-    }}
   >
+    <div className="shadow" />
     <Link
       as={`/m/${link.title.toLowerCase().replace(" ", "-")}`}
       href={`/menus?title=${link.title.toLowerCase().replace(" ", "-")}`}
     >
       <a>
+        <img src={link.image} alt={link.title} />
         <div>{link.title}</div>
       </a>
     </Link>

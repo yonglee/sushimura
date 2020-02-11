@@ -1,6 +1,4 @@
-import styled from "styled-components";
-
-const MenuNavStyles = styled.nav`
+.menunav {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -59,11 +57,18 @@ const MenuNavStyles = styled.nav`
           transform: translateZ(0);
           perspective: 1000;
           backface-visibility: hidden;
-          border: 1px solid ${props => props.theme.grey2};
+          border: 1px solid #9e9e9e;
           transition: all 500ms linear;
-          width: 120px;
-          height: 80px;
-
+          &:before {
+            background: rgba(0, 0, 0, 0.2);
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+          }
           a {
             width: 120px;
             height: 80px;
@@ -77,27 +82,21 @@ const MenuNavStyles = styled.nav`
             z-index: 2;
             position: relative;
             font-weight: 600;
-            img {
-              position: absolute;
-              width: 100%;
-              height: 100%;
-            }
             div {
               background: rgba(0, 0, 0, 1);
               padding: 6px 12px;
               border-radius: 4px;
-              z-index: 3;
             }
           }
           &.active {
-            border: 1px solid ${props => props.theme.papayaWhip};
+            border: 1px solid rgb(255, 239, 213);
             &:before {
               background: rgba(0, 0, 0, 0);
             }
             a {
               color: #000;
               div {
-                background: ${props => props.theme.papayaWhip};
+                background: rgb(255, 239, 213);
               }
             }
           }
@@ -105,6 +104,4 @@ const MenuNavStyles = styled.nav`
       }
     }
   }
-`;
-
-export default MenuNavStyles;
+}
