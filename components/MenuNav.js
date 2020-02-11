@@ -14,7 +14,6 @@ const MenuNavItem = ({ link }) => (
         ? "active"
         : ""
     }
-    className="background"
     style={{
       backgroundImage: `url('${link.image}')`,
       backgroundSize: "100% 100%",

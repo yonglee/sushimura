@@ -9,14 +9,16 @@ const MenuNavStyles = styled.nav`
   .menunav-container {
     width: 100%;
     max-width: 1200px;
-    height: 80px;
+    /* height: 80px; */
+    height: 82px;
     display: flex;
     justify-content: center;
     position: relative;
     overflow: hidden;
     .button {
       width: 31px;
-      height: 80px;
+      /* height: 80px; */
+      height: 82px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -44,7 +46,8 @@ const MenuNavStyles = styled.nav`
       overflow-x: auto;
       position: relative;
       width: 100%;
-      height: 98px;
+      /* height: 98px; */
+      height: 100px;
       background: transparent;
       margin-left: 4px;
       margin-right: 4px;
@@ -57,12 +60,25 @@ const MenuNavStyles = styled.nav`
         li {
           margin-left: 2px;
           margin-right: 2px;
-          /* padding: 1rem;
-          padding-top: 2rem; */
-          /* padding-top: 1rem; */
-
-          height: 100%;
           position: relative;
+          height: 100%;
+          /* width: 120px;
+          height: 80px; */
+          transform: translateZ(0);
+          perspective: 1000;
+          backface-visibility: hidden;
+          border: 1px solid ${props => props.theme.grey2};
+          transition: all 500ms linear;
+          &:before {
+            background: rgba(0, 0, 0, 0.2);
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+          }
 
           a {
             width: 120px;
@@ -75,26 +91,25 @@ const MenuNavStyles = styled.nav`
             color: #fff;
             background: transparent;
             z-index: 2;
+            position: relative;
+            font-weight: 600;
             div {
-              background: rgba(0, 0, 0, 0.5);
-              padding: 4px 8px;
+              background: rgba(0, 0, 0, 1);
+              padding: 6px 12px;
               border-radius: 4px;
             }
           }
 
           &.active {
-            .background {
-              /* width: 100%;
-              height: 100%; */
-              &:before {
-                background: transparent;
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                z-index: 1;
+            border: 1px solid ${props => props.theme.papayaWhip};
+            &:before {
+              background: rgba(0, 0, 0, 0);
+            }
+            a {
+              color: #000;
+              div {
+                /* background: rgba(255, 255, 255, 1); */
+                background: ${props => props.theme.papayaWhip};
               }
             }
           }

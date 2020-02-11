@@ -2,7 +2,10 @@ import React from "react";
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 // import global from "../styles/global.scss";
 // import "../styles/index.scss";
+import { useRouter } from "next/router";
 import Nav from "./nav";
+import MenuNav from "../components/MenuNav";
+import { unstable_renderSubtreeIntoContainer } from "react-dom";
 
 const theme = {
   fontNanum: "Nanum Gothic, sans-serif",
