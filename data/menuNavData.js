@@ -10,6 +10,11 @@ export default [
     image: "/menu/menu-nav/bbq-combo-ribs.jpg"
   },
   {
+    id: "5fed59cb-4bc5-4554-8e69-6936cea65efd",
+    title: "Dinner",
+    image: "/menu/menu-nav/dinner-sashimi.jpg"
+  },
+  {
     id: "4882962d-3edd-4695-8ece-0a9360e05885",
     title: "Donburi",
     image: "/menu/menu-nav/donburi-chirashi.jpg"
