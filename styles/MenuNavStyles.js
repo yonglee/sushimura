@@ -66,7 +66,7 @@ const MenuNavStyles = styled.nav`
           backface-visibility: hidden; */
           border: 1px solid ${props => props.theme.grey2};
           background: #9e9e9e;
-          transition: border 300ms ease-in;
+          transition: all 500ms ease-in-out;
           &:before {
             background: rgba(0, 0, 0, 0.4);
             content: "";
@@ -101,6 +101,8 @@ const MenuNavStyles = styled.nav`
           }
           &.active {
             border: 1px solid ${props => props.theme.papayaWhip};
+            /* background-position: center center;
+            background-size: 110% 110% !important; */
             &:before {
               background: rgba(0, 0, 0, 0);
             }

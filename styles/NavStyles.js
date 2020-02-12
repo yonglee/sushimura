@@ -51,12 +51,13 @@ const NavStyles = styled.nav`
     /* justify-content: center; */
     width: 100%;
     position: relative;
-    height: 100%;
+    /* height: 100%; */
     /* padding: 4px 4px; */
     /* padding: 2px; */
     justify-content: center;
     align-items: center;
     height: 66px;
+    padding: 0;
     ul {
       flex-direction: row;
       padding: 0;
@@ -67,21 +68,24 @@ const NavStyles = styled.nav`
     }
     .nav-logo-box {
       margin: 0;
+      padding: 0;
       /* padding: 6px 12px; */
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 0;
+      height: 66px;
       li {
         padding: 0;
         margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         a {
           margin: 0;
           padding: 0;
+          height: 50px;
           img {
-            /* width: 100px;
-            height: auto; */
-            height: 41px;
+            height: 50px;
             width: auto;
           }
         }

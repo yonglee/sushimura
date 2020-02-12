@@ -11,6 +11,8 @@ const seoHead = {
 };
 
 const Menu = props => {
+  if (typeof window !== "undefined")
+    Router.push(`/menus?title=special&rolls`, `/m/special-rolls`);
   return (
     <>
       {/* <Head {...seoHead} /> */}

@@ -51,6 +51,14 @@ const MenuNav = ({ path }) => {
       scrollbar: outer.current.scrollHeight - outer.current.offsetHeight,
       scrollbarWidth: outer.current.clientWidth - 62
     });
+    if (
+      typeof window !== "undefined" &&
+      $(".menuav-scroller") &&
+      $(".menunav-scroller").find(".active")[0]
+    )
+      scrollLeft($(".menunav-scroller").find(".active")[0].offsetLeft);
+    // console.log("hi ", $(".menunav-scroller").find(".active")[0].offsetLeft);
+    // console.log("hi ", $(".menunav-scroller")[0]);
     window.addEventListener("resize", onResize);
     return () => {
       window.removeEventListener("resize", onResize);
@@ -62,6 +70,10 @@ const MenuNav = ({ path }) => {
       ...menuHeight,
       scrollbarWidth: outer.current.clientWidth - 62
     });
+  };
+
+  const scrollLeft = offset => {
+    $(".menunav-scroller").animate({ scrollLeft: "+=" + offset }, 650);
   };
 
   const handleLeftClick = () => {
