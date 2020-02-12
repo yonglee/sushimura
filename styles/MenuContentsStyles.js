@@ -5,7 +5,8 @@ const MenuContentsStyles = styled.div`
   max-width: 1140px;
   margin: 0 auto;
   padding: 1rem;
-  background: ${props => props.theme.papayaWhip};
+  /* background: ${props => props.theme.papayaWhip}; */
+  background: #fff;
 `;
 
 export default MenuContentsStyles;

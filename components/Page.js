@@ -135,6 +135,7 @@ const Main = styled.div`
   width: calc(100% - 260px);
   /* background: #eeedea; */
   background: #fff;
+  /* background: ${props => props.theme.papayaWhip}; */
   position: fixed;
   left: 260px;
   height: 100%;
@@ -142,9 +143,18 @@ const Main = styled.div`
 
   .menu-content-container {
     width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
+    /* max-width: 1140px; */
+    /* margin: 0 auto; */
     padding: 1rem;
+    background: url('/menu-outer-bg.jpg');
+    background-repeat: repeat;
+    min-height: 90vh;
+    @media (max-width: 1024px) {
+      padding: 10px;
+     }
+    @media (max-width: 540px) {
+      padding: 6px;
+     }
   }
 
   /* @media (max-width: 1024px) and (orientation: portrait) { */

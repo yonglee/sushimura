@@ -18,6 +18,12 @@ app
       app.render(req, res, actualPage, queryParams);
     });
 
+    // server.get("/menu", (req, res) => {
+    //   const actualPage = "/menus";
+    //   const queryParams = { title: req.params.title };
+    //   app.render(req, res, actualPage, queryParams);
+    // });
+
     server.get("*", (req, res) => {
       return handle(req, res);
     });

@@ -1,34 +1,38 @@
 import { withRouter } from "next/router";
-import dynamic from "next/dynamic";
+import PropTypes from "prop-types";
 import MenuNav from "../components/MenuNav";
 // const MenuNav = dynamic(() => import("../components/MenuNav"), { ssr: false });
 import Head from "../components/Head";
 import MenuContents from "../components/MenuContents";
+import menuData from "../data/menuData";
 
-const Menus = props => {
-  const seoTitle = props.router.query.title.replace("-", " ").toUpperCase();
-  const seoHead = {
-    title: `${seoTitle} | MENU | SUSHI MURA`,
-    description: props.router.query.title
-  };
+const Menus = ({ title }) => {
+  const data = menuData[title.toLowerCase()];
+  // const seoHead = {
+  //   title: `${data.title} | Menu | Sushi Mura`,
+  //   description: props.router.query.title
+  // };
+
+  // console.log("data", data);
 
   return (
     <>
       {/* <Head {...seoHead} /> */}
       <MenuNav />
-      {/* <div className="menu-content-container">
-        <h1>{props.router.query.title}</h1>
-        <h1>{props.router.query.title}</h1>
-        <h1>{props.router.query.title}</h1>
-        <h1>{props.router.query.title}</h1>
-        <h1>{props.router.query.title}</h1>
-        <h1>{props.router.query.title}</h1>
-        <h1>{props.router.query.title}</h1>
-        <h1>{props.router.query.title}</h1>
-      </div> */}
-      <MenuContents />
+      <div className="menu-content-container">
+        {data && <MenuContents data={data} />}
+      </div>
     </>
   );
+};
+
+Menus.propTypes = {
+  title: PropTypes.string.isRequired
+};
+
+Menus.getInitialProps = ctx => {
+  console.log(ctx.query.title);
+  return { title: ctx.query.title.split("-").join(" ") };
 };
 
 export default withRouter(Menus);
