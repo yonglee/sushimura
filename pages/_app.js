@@ -1,6 +1,6 @@
+import "babel-polyfill";
 import React from "react";
 import App from "next/app";
-import "babel-polyfill";
 import Page from "../components/Page";
 
 class MyApp extends App {

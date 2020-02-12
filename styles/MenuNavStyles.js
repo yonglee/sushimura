@@ -65,10 +65,10 @@ const MenuNavStyles = styled.nav`
           perspective: 1000;
           backface-visibility: hidden; */
           border: 1px solid ${props => props.theme.grey2};
-          transition: all 500ms linear;
           background: #9e9e9e;
+          transition: border 300ms ease-in;
           &:before {
-            background: rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0.4);
             content: "";
             position: absolute;
             width: 100%;
@@ -76,6 +76,7 @@ const MenuNavStyles = styled.nav`
             top: 0;
             left: 0;
             z-index: 1;
+            transition: background 500ms ease-in;
           }
           a {
             width: 120px;
@@ -85,16 +86,17 @@ const MenuNavStyles = styled.nav`
             justify-content: center;
             align-items: center;
             white-space: nowrap;
-            color: #fff;
             background: transparent;
             z-index: 2;
             position: relative;
             font-weight: 600;
             border: 1px solid #000;
             div {
+              color: #fff;
               background: rgba(0, 0, 0, 1);
               padding: 6px 10px;
               border-radius: 4px;
+              transition: all 300ms ease-in;
             }
           }
           &.active {
@@ -103,9 +105,8 @@ const MenuNavStyles = styled.nav`
               background: rgba(0, 0, 0, 0);
             }
             a {
-              /* color: #000; */
-              color: #8b0000;
               div {
+                color: #8b0000;
                 background: ${props => props.theme.papayaWhip};
               }
             }

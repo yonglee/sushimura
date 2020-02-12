@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "nodemon server.js",
     "build": "next build",
-    "start": "next start -p 3001"
+    "start": "next start -p 3001",
+    "windows": "cross-env NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",

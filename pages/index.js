@@ -11,7 +11,7 @@ const seoHead = {
 
 const Home = () => (
   <>
-    <Head {...seoHead} />
+    {/* <Head {...seoHead} /> */}
     <Slider />
     <h1>Hello</h1>
     <h1>Hello</h1>

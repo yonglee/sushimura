@@ -14,7 +14,7 @@ const Menus = props => {
 
   return (
     <>
-      <Head {...seoHead} />
+      {/* <Head {...seoHead} /> */}
       <MenuNav />
       {/* <div className="menu-content-container">
         <h1>{props.router.query.title}</h1>

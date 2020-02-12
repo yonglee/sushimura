@@ -10,7 +10,7 @@ const seoHead = {
 const contact = props => {
   return (
     <>
-      <Head {...seoHead} />
+      {/* <Head {...seoHead} /> */}
       <div className="heading-box">
         <h1 className="heading">Contact US!!!</h1>
       </div>

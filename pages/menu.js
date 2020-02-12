@@ -13,7 +13,7 @@ const seoHead = {
 const Menu = props => {
   return (
     <>
-      <Head {...seoHead} />
+      {/* <Head {...seoHead} /> */}
       <MenuNav />
     </>
   );
