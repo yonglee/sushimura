@@ -1,6 +1,6 @@
 export default [
   {
-    id: 0,
+    id: "cae17b5b-1fee-4b6b-94aa-392bf6d610e0",
     title: "Appetizer",
     desc: "Extra sauce: $0.50",
     desc2: "",
@@ -114,7 +114,7 @@ export default [
     ]
   },
   {
-    id: 1,
+    id: "bbe68921-1c33-4f07-8d77-c1ce73a37a6f",
     title: "BBQ Combo",
     desc: "Served with miso soup & rice",
     desc2: "",
@@ -144,126 +144,8 @@ export default [
     ]
   },
   {
-    id: 2,
-    title: "Teriyaki",
-    desc: "Served with miso soup & rice",
-    desc2: "",
-    href: "/teriyaki",
-    items: [
-      {
-        title: "Vegetable Teriyaki",
-        desc: "",
-        price: "$10.75",
-        small: "",
-        large: ""
-      },
-      {
-        title: "Tofu Teriyaki",
-        desc: "",
-        price: "$11.75",
-        small: "",
-        large: ""
-      },
-      {
-        title: "Spicy Beef Teriyaki",
-        desc: "",
-        price: "$12.50",
-        small: "",
-        large: ""
-      },
-      {
-        title: "Seafood Teriyaki",
-        desc: "",
-        price: "$12.75",
-        small: "",
-        large: ""
-      },
-      {
-        title: "Spicy Chicken Teriyaki",
-        desc: "",
-        price: "$12.50",
-        small: "",
-        large: ""
-      },
-      {
-        title: "Spicy Seafood Teriyaki",
-        desc: "",
-        price: "$12.75",
-        small: "",
-        large: ""
-      },
-      {
-        title: "Salmon Teriyaki",
-        desc: "",
-        price: "$13.75",
-        small: "",
-        large: ""
-      },
-      {
-        title: "Beef Teriyaki",
-        desc: "",
-        price: "$12.50",
-        small: "",
-        large: ""
-      },
-      {
-        title: "Chicken Teriyaki",
-        desc: "",
-        price: "$12.50",
-        small: "",
-        large: ""
-      },
-      {
-        title: "Spicy tofu Teriyaki",
-        desc: "",
-        price: "$11.75",
-        small: "",
-        large: ""
-      }
-    ]
-  },
-  {
-    id: 3,
-    title: "Lunch Box",
-    desc: "11:00 - 3:30, No substitutions",
-    desc2: "* Served with miso soup, rice optional",
-    href: "/lunch-box",
-    items: [
-      {
-        title: "Lunch Box A",
-        desc: "Chicken teriyaki, assorted tempura, california roll and salad",
-        price: "$13.95",
-        small: "",
-        large: ""
-      },
-      {
-        title: "Lunch Box B",
-        desc:
-          "Beef teriyaki, assorted tempura, assorted nigiri (Tuna, salmon, ebi) and salad",
-        price: "$14.25",
-        small: "",
-        large: ""
-      },
-      {
-        title: "Lunch Box C",
-        desc:
-          "Salmon teriyaki, assorted tempura, sashimi (2pcs tuna, 2pcs salmon) and salad",
-        price: "$14.25",
-        small: "",
-        large: ""
-      },
-      {
-        title: "Lunch Box D",
-        desc: "Vegetable teriyaki, vegetable tempura, vegetable roll and salad",
-        price: "$12.25",
-        small: "",
-        large: ""
-      }
-    ]
-  },
-  {
-    id: 4,
-    title: "Dinner Box",
+    id: "5fed59cb-4bc5-4554-8e69-6936cea65efd",
+    title: "Dinner",
     desc: "No substitutions",
     desc2: "* Served with miso soup, ebi / vegetable sunomono, rice optional",
     href: "/dinner-box",
@@ -316,6 +198,47 @@ export default [
       }
     ]
   },
+
+  {
+    id: 3,
+    title: "Lunch Box",
+    desc: "11:00 - 3:30, No substitutions",
+    desc2: "* Served with miso soup, rice optional",
+    href: "/lunch-box",
+    items: [
+      {
+        title: "Lunch Box A",
+        desc: "Chicken teriyaki, assorted tempura, california roll and salad",
+        price: "$13.95",
+        small: "",
+        large: ""
+      },
+      {
+        title: "Lunch Box B",
+        desc:
+          "Beef teriyaki, assorted tempura, assorted nigiri (Tuna, salmon, ebi) and salad",
+        price: "$14.25",
+        small: "",
+        large: ""
+      },
+      {
+        title: "Lunch Box C",
+        desc:
+          "Salmon teriyaki, assorted tempura, sashimi (2pcs tuna, 2pcs salmon) and salad",
+        price: "$14.25",
+        small: "",
+        large: ""
+      },
+      {
+        title: "Lunch Box D",
+        desc: "Vegetable teriyaki, vegetable tempura, vegetable roll and salad",
+        price: "$12.25",
+        small: "",
+        large: ""
+      }
+    ]
+  },
+
   {
     id: 5,
     title: "Donburi",
@@ -1466,6 +1389,85 @@ export default [
         title: "Tempura Roll",
         desc: "Deep fried; tuna, salmon, tai, crab, cucumber",
         price: "$8.95",
+        small: "",
+        large: ""
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "Teriyaki",
+    desc: "Served with miso soup & rice",
+    desc2: "",
+    href: "/teriyaki",
+    items: [
+      {
+        title: "Vegetable Teriyaki",
+        desc: "",
+        price: "$10.75",
+        small: "",
+        large: ""
+      },
+      {
+        title: "Tofu Teriyaki",
+        desc: "",
+        price: "$11.75",
+        small: "",
+        large: ""
+      },
+      {
+        title: "Spicy Beef Teriyaki",
+        desc: "",
+        price: "$12.50",
+        small: "",
+        large: ""
+      },
+      {
+        title: "Seafood Teriyaki",
+        desc: "",
+        price: "$12.75",
+        small: "",
+        large: ""
+      },
+      {
+        title: "Spicy Chicken Teriyaki",
+        desc: "",
+        price: "$12.50",
+        small: "",
+        large: ""
+      },
+      {
+        title: "Spicy Seafood Teriyaki",
+        desc: "",
+        price: "$12.75",
+        small: "",
+        large: ""
+      },
+      {
+        title: "Salmon Teriyaki",
+        desc: "",
+        price: "$13.75",
+        small: "",
+        large: ""
+      },
+      {
+        title: "Beef Teriyaki",
+        desc: "",
+        price: "$12.50",
+        small: "",
+        large: ""
+      },
+      {
+        title: "Chicken Teriyaki",
+        desc: "",
+        price: "$12.50",
+        small: "",
+        large: ""
+      },
+      {
+        title: "Spicy tofu Teriyaki",
+        desc: "",
+        price: "$11.75",
         small: "",
         large: ""
       }

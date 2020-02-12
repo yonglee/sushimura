@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 const Slider = dynamic(() => import("../components/Slider"), { ssr: false });
 
 const seoHead = {
-  title: "Home",
+  title: "HOME | SUSHIMURA",
   description: "Test Home Page"
 };
 

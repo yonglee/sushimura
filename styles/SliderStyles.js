@@ -28,7 +28,7 @@ const SliderStyles = styled.div`
     }
   }
   .slider-btn {
-    z-index: 999;
+    z-index: 1;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

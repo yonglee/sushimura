@@ -3,7 +3,8 @@ import styled, { ThemeProvider, createGlobalStyle } from "styled-components";
 // import global from "../styles/global.scss";
 // import "../styles/index.scss";
 import { useRouter } from "next/router";
-import Nav from "./nav";
+import Nav from "./Nav";
+import Footer from "../components/Footer";
 import MenuNav from "../components/MenuNav";
 
 const theme = {
@@ -124,29 +125,56 @@ const Wrapper = styled.div`
   background: #fff;
   display: flex;
   position: relative;
+  /* @media (max-width: 1024px) and (orientation: portrait) { */
+  @media (max-width: 1024px) {
+    display: block;
+  }
 `;
 
 const Main = styled.div`
   width: calc(100% - 260px);
-  background: #eeedea;
+  /* background: #eeedea; */
+  background: #fff;
   position: fixed;
   left: 260px;
   height: 100%;
   overflow-y: auto;
+
+  .menu-content-container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  /* @media (max-width: 1024px) and (orientation: portrait) { */
+  @media (max-width: 1024px) {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
 `;
 
 const Page = props => {
   useEffect(() => {}, []);
   return (
     <ThemeProvider theme={theme}>
-      <Wrapper>
+      <Wrapper
+        onTouchStart={() => {
+          return true;
+        }}
+      >
         <Nav />
-        <Main>{props.children}</Main>
+        <Main>
+          {props.children}
+          <Footer />
+        </Main>
       </Wrapper>
       <GlobalStyle />
     </ThemeProvider>
   );
 };
+
 // const Page = props => {
 //   useEffect(() => {}, []);
 
@@ -167,7 +195,7 @@ const Page = props => {
 //         <Nav />
 //         <Main>
 //           {useRouter().pathname === "/menus" ||
-//           useRouter().pathname === "menu" ? (
+//           useRouter().pathname === "/menu" ? (
 //             <MenuMain />
 //           ) : (
 //             <MainInner />

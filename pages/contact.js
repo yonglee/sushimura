@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Head from "../components/Head";
 
 const seoHead = {
-  title: "Contact",
+  title: "CONTACT | SUSHI MURA",
   description: "Test Contact Page"
 };
 

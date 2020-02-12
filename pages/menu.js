@@ -1,15 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Router, { withRouter } from "next/router";
 import Head from "../components/Head";
 
 import MenuNav from "../components/MenuNav";
 
 const seoHead = {
-  title: "Menu",
+  title: "MENU",
   description: "Test Menu Page"
 };
 
-const menu = props => {
+const Menu = props => {
   return (
     <>
       <Head {...seoHead} />
@@ -18,6 +19,4 @@ const menu = props => {
   );
 };
 
-menu.propTypes = {};
-
-export default menu;
+export default withRouter(Menu);

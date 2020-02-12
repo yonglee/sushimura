@@ -6,17 +6,20 @@ const MenuNavStyles = styled.nav`
   justify-content: center;
   background: #1b1b1b;
   padding: 16px;
+  border-top: 1px solid #6c757d;
+  border-bottom: 1px solid #6c757d;
   .menunav-container {
     width: 100%;
     max-width: 1200px;
-    height: 82px;
+    height: 80px;
     display: flex;
     justify-content: center;
     position: relative;
     overflow: hidden;
     .button {
-      width: 31px;
-      height: 82px;
+      /* width: 31px; */
+      width: 50px;
+      height: 80px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -77,7 +80,7 @@ const MenuNavStyles = styled.nav`
           a {
             width: 120px;
             height: 80px;
-            padding: 16px;
+            /* padding: 16px; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -90,7 +93,7 @@ const MenuNavStyles = styled.nav`
             border: 1px solid #000;
             div {
               background: rgba(0, 0, 0, 1);
-              padding: 6px 12px;
+              padding: 6px 10px;
               border-radius: 4px;
             }
           }
@@ -110,6 +113,11 @@ const MenuNavStyles = styled.nav`
         }
       }
     }
+  }
+
+  /* @media (max-width: 1024px) and (orientation: portrait) { */
+  @media (max-width: 1024px) {
+    padding: 4px 0;
   }
 `;
 

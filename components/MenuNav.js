@@ -90,9 +90,22 @@ const MenuNav = ({ path }) => {
         </button>
         <div className="menunav-scroller" ref={scrollbarRef}>
           <ul>
-            {menuNavData.map(link => (
+            {/* {menuNavData.map(link => (
               <MenuNavItem key={link.id} link={link} />
-            ))}
+            ))} */}
+            <MenuNavItem link={menuNavData[0]} />
+            <MenuNavItem link={menuNavData[1]} />
+            <MenuNavItem link={menuNavData[2]} />
+            <MenuNavItem link={menuNavData[3]} />
+            <MenuNavItem link={menuNavData[4]} />
+            <MenuNavItem link={menuNavData[5]} />
+            <MenuNavItem link={menuNavData[6]} />
+            <MenuNavItem link={menuNavData[7]} />
+            <MenuNavItem link={menuNavData[8]} />
+            <MenuNavItem link={menuNavData[9]} />
+            <MenuNavItem link={menuNavData[10]} />
+            <MenuNavItem link={menuNavData[11]} />
+            <MenuNavItem link={menuNavData[12]} />
           </ul>
         </div>
         <button className="right-button button" onClick={handleRightClick}>

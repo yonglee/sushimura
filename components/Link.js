@@ -5,13 +5,13 @@ import { useRouter } from "next/router";
 export default ({ href, children }) => {
   const router = useRouter();
   let className = children.props.className || "";
-
+  // console.log(router.pathname, href);
   if (router.pathname === href) {
     className = `${className} selected`;
   } else if (
     router.pathname.includes("/menus") &&
     router.pathname !== "/" &&
-    href === "/menu"
+    (href === "/menu" || href.includes("/m/"))
   ) {
     className = `${className} selected`;
   }
