@@ -10,14 +10,10 @@ import MenuNavStyles from "../styles/MenuNavStyles";
 
 const MenuNavItem = ({ link }) => {
   useEffect(() => {}, []);
+
   return (
     <li
-      className={
-        useRouter().asPath ===
-        `/m/${link.title.toLowerCase().replace(" ", "-")}`
-          ? "active"
-          : ""
-      }
+      className={useRouter().asPath === `${link.href}` ? "active" : ""}
       style={{
         backgroundImage: `url('${link.image}')`,
         backgroundSize: "100% 100%",
@@ -25,9 +21,13 @@ const MenuNavItem = ({ link }) => {
         backgroundRepeat: "no-repeat"
       }}
     >
-      <Link
+      {/* <Link
         as={`/m/${link.title.toLowerCase().replace(" ", "-")}`}
         href={`/menus?title=${link.title.toLowerCase().replace(" ", "-")}`}
+      > */}
+      <Link
+        as={`${link.href}`}
+        href={`/menus?title=${link.title.toLowerCase()}`}
       >
         <a>
           <div>{link.title}</div>
@@ -102,10 +102,10 @@ const MenuNav = ({ path }) => {
         </button>
         <div className="menunav-scroller" ref={scrollbarRef}>
           <ul>
-            {/* {menuNavData.map(link => (
+            {menuNavData.map(link => (
               <MenuNavItem key={link.id} link={link} />
-            ))} */}
-            <MenuNavItem link={menuNavData[0]} />
+            ))}
+            {/* <MenuNavItem link={menuNavData[0]} />
             <MenuNavItem link={menuNavData[1]} />
             <MenuNavItem link={menuNavData[2]} />
             <MenuNavItem link={menuNavData[3]} />
@@ -117,7 +117,7 @@ const MenuNav = ({ path }) => {
             <MenuNavItem link={menuNavData[9]} />
             <MenuNavItem link={menuNavData[10]} />
             <MenuNavItem link={menuNavData[11]} />
-            <MenuNavItem link={menuNavData[12]} />
+            <MenuNavItem link={menuNavData[12]} /> */}
           </ul>
         </div>
         <button className="right-button button" onClick={handleRightClick}>

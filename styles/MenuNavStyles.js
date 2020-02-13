@@ -91,12 +91,20 @@ const MenuNavStyles = styled.nav`
             position: relative;
             font-weight: 600;
             border: 1px solid #000;
+            /* padding: 0 2px; */
             div {
+              /* width: 100%;
+              max-width: 100px; */
+              max-width: 110px;
               color: #fff;
               background: rgba(0, 0, 0, 1);
-              padding: 6px 10px;
+              /* padding: 6px 10px; */
+              /* padding: 4px 8px; */
+              padding: 4px 6px;
               border-radius: 4px;
               transition: all 300ms ease-in;
+              white-space: normal;
+              text-align: center;
             }
           }
           &.active {
@@ -108,7 +116,8 @@ const MenuNavStyles = styled.nav`
             }
             a {
               div {
-                color: #8b0000;
+                /* color: #8b0000; */
+                color: #000;
                 background: ${props => props.theme.papayaWhip};
               }
             }

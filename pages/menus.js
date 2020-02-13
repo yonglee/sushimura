@@ -8,12 +8,11 @@ import menuData from "../data/menuData";
 
 const Menus = ({ title }) => {
   const data = menuData[title.toLowerCase()];
+
   // const seoHead = {
   //   title: `${data.title} | Menu | Sushi Mura`,
   //   description: props.router.query.title
   // };
-
-  // console.log("data", data);
 
   return (
     <>
@@ -31,8 +30,11 @@ Menus.propTypes = {
 };
 
 Menus.getInitialProps = ctx => {
-  console.log(ctx.query.title);
-  return { title: ctx.query.title.split("-").join(" ") };
+  const title = ctx.asPath
+    .split("/")[2]
+    .split("-")
+    .join("_");
+  return { title };
 };
 
 export default withRouter(Menus);
