@@ -11,14 +11,27 @@ const seoHead = {
 };
 
 const Menu = props => {
-  if (typeof window !== "undefined")
+  if (typeof window !== "undefined") {
     Router.push(`/menus?title=special&rolls`, `/m/special-rolls`);
+    return null;
+  }
   return (
     <>
       {/* <Head {...seoHead} /> */}
-      <MenuNav />
+      {/* <MenuNav /> */}
     </>
   );
+};
+
+Menu.getInitialProps = async ctx => {
+  // console.log("get initial menu", ctx);
+  if (ctx.res) {
+    await ctx.res.writeHead(302, {
+      Location: "/m/special-rolls"
+    });
+    ctx.res.end();
+  }
+  return {};
 };
 
 export default withRouter(Menu);

@@ -148,7 +148,7 @@ const Main = styled.div`
     padding: 1rem;
     background: url('/menu-outer-bg.jpg');
     background-repeat: repeat;
-    min-height: 90vh;
+    /* min-height: 90vh; */
     @media (max-width: 1024px) {
       padding: 10px;
      }

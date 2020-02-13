@@ -11,8 +11,8 @@ const MenuContentsStyles = styled.div`
   /* background: #1c2e4a; */
   /* background: #1b1b1b; */
   .menu-title-box {
-    background: url("/menu/menu-header-bg.jpg");
-    background-position: center center;
+    background: url("/menu/menu-header-bg-1140x120.jpg");
+    background-size: 100% 100%;
     width: 100%;
     height: 120px;
     display: flex;
@@ -22,6 +22,8 @@ const MenuContentsStyles = styled.div`
     border-radius: 4px 4px 0 0;
     @media (max-width: 1024px) {
       height: 100px;
+      background-position: right center;
+      background-size: cover;
     }
     .menu-title {
       /* font-size: 64px; */
