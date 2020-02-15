@@ -16,6 +16,8 @@ const Menus = ({ title }) => {
   //   description: props.router.query.title
   // };
 
+  // console.log(data);
+
   return (
     <div className="menu-page-wrapper">
       {/* <Head {...seoHead} /> */}

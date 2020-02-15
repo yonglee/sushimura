@@ -6,8 +6,11 @@ import MenuContentWithoutImages from "../components/MenuContentWithoutImages";
 // import menuData from "../data/menuData";
 
 const MenuContents = ({ data }) => {
-  const withImages = data.items.filter(item => item.small !== "");
-  const withoutImages = data.items.filter(item => item.small === "");
+  const withoutImages =
+    data.items[0].size_title && data.items[0].size_title !== ""
+      ? data.items
+      : data.items.filter(item => item.small === "");
+
   return (
     <MenuContentsStyles>
       <div className="menu-title-box">
@@ -36,7 +39,7 @@ const MenuContents = ({ data }) => {
           )}
         </div>
       )}
-      <MenuContentWithoutImages data={withoutImages} />
+      <MenuContentWithoutImages data={withoutImages} key={data.id} />
     </MenuContentsStyles>
   );
 };

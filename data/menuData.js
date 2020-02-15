@@ -1131,8 +1131,7 @@ export default {
     items: [
       {
         id: "8a7b7140-510c-4dae-bcc0-449ad5c00adb",
-        size: true,
-        title: "Small (6pcs)",
+        size_title: "Small (6pcs)",
         items: [
           {
             id: "3dc7be3c-e536-4666-be73-e95ce31ccaea",
@@ -1210,8 +1209,7 @@ export default {
       },
       {
         id: "09a67cc7-1e76-440d-bf70-b078457a58bd",
-        size: true,
-        title: "Medium (8pcs)",
+        size_title: "Medium (8pcs)",
         items: [
           {
             id: "4ad1c46c-a3a4-45ca-9241-f5ea1e4207e3",
@@ -1345,8 +1343,7 @@ export default {
       },
       {
         id: "5ce58b7b-92c1-44b3-b769-e8c84393356c",
-        size: true,
-        title: "Large (6pcs)",
+        size_title: "Large (6pcs)",
         items: [
           {
             id: "2f853b69-978d-4f15-ab23-7fc6486b4b13",
