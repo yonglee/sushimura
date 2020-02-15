@@ -9,11 +9,7 @@ const NavStyles = styled.nav`
   z-index: 999;
   top: 0;
   left: 0;
-
-  .selected {
-    color: #8b0000;
-  }
-
+  background: #fff;
   ul {
     display: flex;
     flex-direction: column;
@@ -30,6 +26,11 @@ const NavStyles = styled.nav`
         font-weight: 600;
         padding: 5px 10px;
         color: #1b1b1b;
+        transition: color 300ms linear;
+
+        &.selected {
+          color: #8b0000;
+        }
       }
     }
   }
@@ -131,7 +132,12 @@ const NavStyles = styled.nav`
     display: none;
   }
   @media (max-width: 1024px) {
-    position: sticky;
+    /* position: sticky; */
+
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
     background: #1b1b1b;
     .mobile-nav-links-wrapper {
       border-top: 1px solid #6c757d;
@@ -141,8 +147,9 @@ const NavStyles = styled.nav`
       width: 100%;
       height: calc(100vh - 66px);
       top: 66px;
-      z-index: 1000;
+      z-index: 999;
       background: #1b1b1b;
+      left: 0;
       transform: translateX(-100%);
       transition: transform 200ms ease-out;
 

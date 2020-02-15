@@ -34,11 +34,14 @@ const theme = {
   lightBlue: "#0095ff",
   blue: "#006699",
   darkBlue: "#1c2e4a",
+  veryDarkBlue: "#011432",
   darkBlue2: "#39739d",
   navBlue: "#3c8dbc",
   navBlue2: "#367fa9",
+  veryDarkCyan: "#012c32",
   danger: "#dc3545",
   lightGreen: "#26a69a",
+  darkGreen: "#013220",
   success: "#28a745",
   warning: "#ffc107",
   info: "#17a2b8",
@@ -60,22 +63,22 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     background: transparent;
-  }
+  } 
 
-  body {
+   body {
     margin: 0;
     padding: 0;
-     /* font-size: 1.6rem;
-     line-height: 2; */
     font-size: 1rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch; 
     overflow-x: hidden;
+    /* overflow-y: auto; */
   }
+
 
   a,
   a:focus,
@@ -125,10 +128,11 @@ const Wrapper = styled.div`
   background: #fff;
   display: flex;
   position: relative;
+  height: 100%;
   /* @media (max-width: 1024px) and (orientation: portrait) { */
-  @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) {
     display: block;
-  }
+  } */
 `;
 
 const Main = styled.div`
@@ -136,32 +140,46 @@ const Main = styled.div`
   /* background: #eeedea; */
   background: #fff;
   /* background: ${props => props.theme.papayaWhip}; */
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   left: 260px;
+  /* overflow-y: auto; */
   height: 100%;
-  overflow-y: auto;
-
-  .menu-content-container {
+  .menu-page-wrapper {
+    position: relative;
     width: 100%;
-    /* max-width: 1140px; */
-    /* margin: 0 auto; */
-    padding: 1rem;
-    background: url('/menu-outer-bg.jpg');
-    background-repeat: repeat;
-    /* min-height: 90vh; */
+    /* padding-top: 66px; */
+    padding-top: 114px;
+    .menu-content-container {
+      width: 100%;
+      /* padding: 1rem; */
+      background: url('/menu-outer-bg.jpg');
+      background-repeat: repeat;
+      padding: 1rem;
+      /* min-height: 90vh; */
+      @media (max-width: 1024px) {
+        /* margin-top: calc(66px + 90px); */
+        padding: 10px;
+      }
+      @media (max-width: 540px) {
+        padding: 6px;
+      }
+    
+    }
+
     @media (max-width: 1024px) {
-      padding: 10px;
-     }
-    @media (max-width: 540px) {
-      padding: 6px;
-     }
+        /* padding-top: 156px; */
+        padding-top: 90px;
+      }
   }
+
 
   /* @media (max-width: 1024px) and (orientation: portrait) { */
   @media (max-width: 1024px) {
     width: 100%;
     position: relative;
     left: 0;
+    padding-top: 66px;
   }
 `;
 

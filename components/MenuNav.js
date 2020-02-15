@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import PropTypes from "prop-types";
 import uuid from "uuid";
 import Link from "next/link";
+// import menuNavData from "../data/menuNavData";
 import menuNavData from "../data/menuNavData";
 import { useRouter } from "next/router";
 import $ from "jquery";

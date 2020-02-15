@@ -1,13 +1,18 @@
 import styled from "styled-components";
 
 const MenuNavStyles = styled.nav`
-  width: 100%;
+  top: 0;
+  left: 260px;
+  position: fixed;
+  /* width: 100%; */
+  width: calc(100% - 260px);
   display: flex;
   justify-content: center;
   background: #1b1b1b;
   padding: 16px;
   border-top: 1px solid #6c757d;
   border-bottom: 1px solid #6c757d;
+  z-index: 998;
   .menunav-container {
     width: 100%;
     max-width: 1200px;
@@ -129,6 +134,9 @@ const MenuNavStyles = styled.nav`
 
   /* @media (max-width: 1024px) and (orientation: portrait) { */
   @media (max-width: 1024px) {
+    width: 100%;
+    top: 66px;
+    left: 0;
     padding: 4px 0;
   }
 `;

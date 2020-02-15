@@ -1,12 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import MenuContentsStyles from "../styles/MenuContentsStyles";
-import MenuContent from "../components/MenuContent";
+import MenuContentWithImages from "../components/MenuContentWithImages";
+import MenuContentWithoutImages from "../components/MenuContentWithoutImages";
 // import menuData from "../data/menuData";
 
 const MenuContents = ({ data }) => {
-  const withImages = data.items.filter(item => item.small === "");
-  const withoutImages = data.items.filter(item => item.small !== "");
+  const withImages = data.items.filter(item => item.small !== "");
+  const withoutImages = data.items.filter(item => item.small === "");
   return (
     <MenuContentsStyles>
       <div className="menu-title-box">
@@ -19,20 +20,23 @@ const MenuContents = ({ data }) => {
           />
         </div> */}
       </div>
-      <div className="menu-contents-box">
-        <p className="menu-desc">{data.desc}</p>
-        <p className="menu-desc2">{data.desc2}</p>
-        {/* <ul>
-        {withImages.map(item => (
-          <MenuContent key={item.id} item={item} />
-        ))}
-      </ul> */}
-        <ul className="menu-contents-with-images">
-          {withImages.map(item => (
-            <MenuContent key={item.id} item={item} />
-          ))}
-        </ul>
-      </div>
+      {data.desc !== "" && (
+        <div className="menu-contents-box">
+          {data.desc !== "" && (
+            <div className="menu-desc">
+              <i className="fas fa-star" />
+              {data.desc}
+            </div>
+          )}
+          {data.desc2 !== "" && (
+            <div className="menu-desc2">
+              <i className="fas fa-star" />
+              {data.desc2}
+            </div>
+          )}
+        </div>
+      )}
+      <MenuContentWithoutImages data={withoutImages} />
     </MenuContentsStyles>
   );
 };

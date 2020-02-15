@@ -44,6 +44,23 @@ const SliderStyles = styled.div`
       font-size: 30px;
     }
   }
+
+  @media (max-width: 1024px) {
+    width: 100vw;
+    height: (100vh - 66px);
+    .slider-container {
+      width: 100vw;
+      height: (100vh - 66px);
+      .slide {
+        width: 100vw;
+        height: (100vh - 66px);
+        img {
+          width: 100vw;
+          height: (100vh - 66px);
+        }
+      }
+    }
+  }
 `;
 
 export default SliderStyles;

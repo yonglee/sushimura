@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const MenuContentsStyles = styled.div`
   width: 100%;
-  max-width: 1140px;
+  /* max-width: 1140px; */
+  max-width: 1440px;
   margin: 0 auto;
   /* padding: 1rem; */
   /* background: ${props => props.theme.papayaWhip}; */
@@ -60,11 +61,24 @@ const MenuContentsStyles = styled.div`
   }
 
   .menu-contents-box {
-    padding: 1rem;
+    margin: 1rem 1rem 0 1rem;
     .menu-desc, .menu-desc2 {
       width: 100%;
       margin: 0 auto 0 auto;
       text-align: center;
+      font-weight: 700;
+      color: ${props => props.theme.darkBlue2};
+      .fas.fa-star {
+        /* color: ${props => props.theme.info}; */
+        color: ${props => props.theme.darkBlue2};
+        margin-right: 10px;
+      }
+    }
+    .menu-desc {
+      font-size: 20px;
+    }
+    .menu-desc2 {
+      margin-top: 8px;
     }
   }
 

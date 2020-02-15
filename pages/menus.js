@@ -1,5 +1,7 @@
 import { withRouter } from "next/router";
 import PropTypes from "prop-types";
+// import styled from "styled-components";
+
 import MenuNav from "../components/MenuNav";
 // const MenuNav = dynamic(() => import("../components/MenuNav"), { ssr: false });
 import Head from "../components/Head";
@@ -15,13 +17,38 @@ const Menus = ({ title }) => {
   // };
 
   return (
-    <>
+    <div className="menu-page-wrapper">
       {/* <Head {...seoHead} /> */}
       <MenuNav />
       <div className="menu-content-container">
         {data && <MenuContents data={data} />}
+
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
+        <h1>test</h1>
       </div>
-    </>
+    </div>
   );
 };
 

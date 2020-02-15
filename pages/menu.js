@@ -12,7 +12,7 @@ const seoHead = {
 
 const Menu = props => {
   if (typeof window !== "undefined") {
-    Router.push(`/menus?title=special&rolls`, `/m/special-rolls`);
+    Router.push(`/menus?title=special%20roll`, `/m/special-roll`);
     return null;
   }
   return (
@@ -27,7 +27,7 @@ Menu.getInitialProps = async ctx => {
   // console.log("get initial menu", ctx);
   if (ctx.res) {
     await ctx.res.writeHead(302, {
-      Location: "/m/special-rolls"
+      Location: "/m/special-roll"
     });
     ctx.res.end();
   }

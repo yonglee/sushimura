@@ -12,6 +12,12 @@ export default [
     image: "/menu/menu-nav/bbq-combo-ribs.jpg"
   },
   {
+    id: "8b51646b-14b9-40b6-8668-877fcb5d1c3e",
+    title: "Boat",
+    href: "/m/boat",
+    image: "/menu/menu-nav/bbq-combo-ribs.jpg"
+  },
+  {
     id: "5fed59cb-4bc5-4554-8e69-6936cea65efd",
     title: "Dinner",
     href: "/m/dinner",
@@ -33,6 +39,12 @@ export default [
     id: "cc65273d-98cb-469c-b396-c6e967592619",
     title: "Nigiri",
     href: "/m/nigiri",
+    image: "/menu/menu-nav/nigiri.jpg"
+  },
+  {
+    id: "d706d461-4efb-4272-ac42-c8dba7a81e01",
+    title: "Noodle",
+    href: "/m/noodle",
     image: "/menu/menu-nav/nigiri.jpg"
   },
   {
@@ -61,8 +73,8 @@ export default [
   },
   {
     id: "52b40037-19f9-4c7c-8442-2b3e11adc9a6",
-    title: "Special Rolls",
-    href: "/m/special-rolls",
+    title: "Special Roll",
+    href: "/m/special-roll",
     image: "/menu/menu-nav/special-roll-mountain.jpg"
   },
   {
@@ -73,14 +85,26 @@ export default [
   },
   {
     id: "0e750e33-53cc-4c34-b8ed-6e406a63318b",
-    title: "Sushi Roll And Cones",
-    href: "/m/sushi-roll-and-cones",
+    title: "Sushi Roll And Cone",
+    href: "/m/sushi-roll-and-cone",
     image: "/menu/menu-nav/roll-and-cones-salmon-tuna.jpg"
   },
   {
     id: "f24a9f73-4a75-4cfb-b602-6546f9a192af",
     title: "Tempura",
     href: "/m/tempura",
+    image: "/menu/menu-nav/tempura-assorted.jpg"
+  },
+  {
+    id: "9a1426bc-94d3-4b41-9299-c97943727839",
+    title: "Teriyaki",
+    href: "/m/teriyaki",
+    image: "/menu/menu-nav/tempura-assorted.jpg"
+  },
+  {
+    id: "988182d0-2146-4624-a4fd-6a0cdd00a4cf",
+    title: "Udon",
+    href: "/m/udon",
     image: "/menu/menu-nav/tempura-assorted.jpg"
   }
 ];

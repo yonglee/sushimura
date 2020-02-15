@@ -13,6 +13,36 @@ const contact = props => {
       {/* <Head {...seoHead} /> */}
       <div className="heading-box">
         <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
+        <h1 className="heading">Contact US!!!</h1>
       </div>
     </>
   );
