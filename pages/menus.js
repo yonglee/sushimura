@@ -41,7 +41,15 @@ import menuData from "../data/menuData";
 // };
 
 const Menus = props => {
-  const data = menuData[props.router.query.title.split(" ").join("_")];
+  const data =
+    menuData[
+      props.router.asPath
+        .split("/")[2]
+        .split("-")
+        .join("_")
+    ];
+  console.log("props.router", props.router);
+  console.log("data", data);
 
   // const data = menuData[title.toLowerCase()];
 
