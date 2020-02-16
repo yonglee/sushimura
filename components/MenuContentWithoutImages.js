@@ -46,7 +46,7 @@ const MenuItem = ({ item, index }) => {
 };
 
 const MenuContentWithoutImages = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <MenuContentWithoutImagesStyles>
       {data[0].size_title ? (

@@ -24,31 +24,6 @@ const Menus = ({ title }) => {
       <MenuNav />
       <div className="menu-content-container">
         {data && <MenuContents data={data} />}
-
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
-        <h1>test</h1>
       </div>
     </div>
   );
