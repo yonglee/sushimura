@@ -13,6 +13,7 @@ app
     const server = express();
 
     server.get("/m/:title", (req, res) => {
+      console.log(`/m/${req.params.title}`);
       const actualPage = "/menus";
       const queryParams = { title: req.params.title };
       app.render(req, res, actualPage, queryParams);
