@@ -48,8 +48,6 @@ const Menus = props => {
         .split("-")
         .join("_")
     ];
-  console.log("props.router", props.router);
-  console.log("data", data);
 
   // const data = menuData[title.toLowerCase()];
 
@@ -61,7 +59,7 @@ const Menus = props => {
   return (
     <div className="menu-page-wrapper">
       {/* <Head {...seoHead} /> */}
-      <MenuNav />
+      <MenuNav path={props.router.asPath} />
       <div className="menu-content-container">
         {data && <MenuContents data={data} />}
       </div>

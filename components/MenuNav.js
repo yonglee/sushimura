@@ -4,17 +4,22 @@ import uuid from "uuid";
 import Link from "next/link";
 // import menuNavData from "../data/menuNavData";
 import menuNavData from "../data/menuNavData";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import $ from "jquery";
 import MenuNavStyles from "../styles/MenuNavStyles";
 // import "../styles/menunav.scss";
 
-const MenuNavItem = ({ link }) => {
+const MenuNavItem = ({ path, link }) => {
   useEffect(() => {}, []);
+
+  // console.log(path, link.href, useRouter().asPath === link.href);
+
+  console.log(path, link.href, path === link.href);
 
   return (
     <li
-      className={useRouter().asPath === `${link.href}` ? "active" : ""}
+      // className={useRouter().asPath === `${link.href}` ? "active" : ""}
+      className={path === link.href ? "active" : ""}
       style={{
         backgroundImage: `url('${link.image}')`,
         backgroundSize: "100% 100%",
@@ -104,21 +109,8 @@ const MenuNav = ({ path }) => {
         <div className="menunav-scroller" ref={scrollbarRef}>
           <ul>
             {menuNavData.map(link => (
-              <MenuNavItem key={link.id} link={link} />
+              <MenuNavItem key={link.id} path={path} link={link} />
             ))}
-            {/* <MenuNavItem link={menuNavData[0]} />
-            <MenuNavItem link={menuNavData[1]} />
-            <MenuNavItem link={menuNavData[2]} />
-            <MenuNavItem link={menuNavData[3]} />
-            <MenuNavItem link={menuNavData[4]} />
-            <MenuNavItem link={menuNavData[5]} />
-            <MenuNavItem link={menuNavData[6]} />
-            <MenuNavItem link={menuNavData[7]} />
-            <MenuNavItem link={menuNavData[8]} />
-            <MenuNavItem link={menuNavData[9]} />
-            <MenuNavItem link={menuNavData[10]} />
-            <MenuNavItem link={menuNavData[11]} />
-            <MenuNavItem link={menuNavData[12]} /> */}
           </ul>
         </div>
         <button className="right-button button" onClick={handleRightClick}>
@@ -127,6 +119,10 @@ const MenuNav = ({ path }) => {
       </div>
     </MenuNavStyles>
   );
+};
+
+MenuNav.propTypes = {
+  path: PropTypes.string.isRequired
 };
 
 export default MenuNav;
