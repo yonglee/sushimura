@@ -18,6 +18,7 @@ const MenuContentWithoutImagesStyles = styled.div`
     flex-direction: column;
     .size-title {
       color: orange;
+      margin: 0 auto;
     }
     .items {
       width: 100%;
@@ -30,23 +31,31 @@ const MenuContentWithoutImagesStyles = styled.div`
         width: 50%;
         display: flex;
         flex-direction: column;
+        text-align: left;
         &.odd {
-          padding-right: 10px;
+          /* padding-right: 10px; */
+          padding-right: 1rem;
         }
         &.even {
-          padding-left: 10px;
+          /* padding-left: 10px; */
+          padding-left: 1rem;
         }
         .title-box {
           display: flex;
           .title {
-            /* flex: 1; */
             font-weight: 700;
             font-size: 18px;
-            max-width: 300px;
+            /* max-width: 300px; */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            div {
+              display: inline-block;
+            }
           }
           .dot-box {
             flex: 1;
-            margin: 0 10px 0 10px;
+            margin: 0 5px 0 5px;
             overflow: hidden;
           }
           .price {
@@ -58,11 +67,22 @@ const MenuContentWithoutImagesStyles = styled.div`
           }
         }
 
+        .title-desc-box {
+          display: flex;
+          justify-content: flex-start;
+          padding-left: 1rem;
+          .title-desc {
+            font-size: 14px;
+            font-weight: 700;
+            color: ${props => props.theme.secondary};
+          }
+        }
+
         &.odd,
         &.even {
           .desc {
             /* font-style: italic; */
-            margin-left: 4px;
+            /* margin-left: 4px; */
             /* font-size: 14px; */
             color: ${props => props.theme.darkGreen};
           }
@@ -75,6 +95,7 @@ const MenuContentWithoutImagesStyles = styled.div`
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 1rem;
     /* justify-content: center; */
     .item {
       margin-top: 1rem;
@@ -83,22 +104,30 @@ const MenuContentWithoutImagesStyles = styled.div`
       display: flex;
       flex-direction: column;
       &.odd {
-        padding-right: 10px;
+        /* padding-right: 10px; */
+        padding-right: 1rem;
       }
       &.even {
-        padding-left: 10px;
+        /* padding-left: 10px; */
+        padding-left: 1rem;
       }
       .title-box {
         display: flex;
+        justify-content: flex-start;
         .title {
-          /* flex: 1; */
           font-weight: 700;
           font-size: 18px;
-          max-width: 300px;
+          /* max-width: 300px; */
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          div {
+            display: inline-block;
+          }
         }
         .dot-box {
           flex: 1;
-          margin: 0 10px 0 10px;
+          margin: 0 5px 0 5px;
           overflow: hidden;
         }
         .price {
@@ -107,27 +136,60 @@ const MenuContentWithoutImagesStyles = styled.div`
           font-weight: 700;
           /* font-style: italic; */
           /* font-size: 18px; */
+          text-align: right;
+        }
+      }
+
+      .title-desc-box {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        .title-desc {
+          font-size: 14px;
+          font-weight: 700;
+          color: ${props => props.theme.secondary};
         }
       }
 
       &.odd,
       &.even {
         .desc {
-          /* font-style: italic; */
-          margin-left: 4px;
-          /* font-size: 14px; */
-          color: ${props => props.theme.darkGreen};
+          /* padding-left: 4px; */
+          em {
+            color: ${props => props.theme.darkGreen};
+          }
         }
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .items {
+      .item {
+        &.odd {
+          padding-right: 8px !important;
+        }
+        &.even {
+          padding-left: 8px !important;
+        }
+        .title-box {
+          .title {
+            max-width: 200px;
+          }
+        }
+      }
+    }
+  }
+
   @media (max-width: 600px) {
     .size-title-box {
       width: 100%;
+      margin-top: 1rem;
     }
     padding: 1rem;
     .items {
       width: 100%;
+      margin-top: 0;
       .item {
         flex-basis: 100%;
         &.odd {
@@ -138,28 +200,23 @@ const MenuContentWithoutImagesStyles = styled.div`
         }
         .title-box {
           .title {
-            min-width: 140px;
-            /* font-size: 16px; */
+            /* min-width: 140px; */
+            /* max-width: 200px */
+            font-size: 16px;
           }
         }
       }
     }
   }
-  @media (max-width: 380px) {
-    .items {
-      .item {
-        &.odd {
-        }
-        &.even {
-        }
-        .title-box {
-          .title {
-            max-width: 200px;
-          }
+  /* @media (max-width: 380px) {
+    .item {
+      .title-box {
+        .title {
+          max-width: 200px;
         }
       }
     }
-  }
+  } */
 `;
 
 export default MenuContentWithoutImagesStyles;

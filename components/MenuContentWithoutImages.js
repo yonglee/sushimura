@@ -1,26 +1,51 @@
 import React from "react";
 import PropTypes from "prop-types";
+import uuid from "uuid";
 import MenuContentWithoutImagesStyles from "../styles/MenuContentWithoutImagesStyles";
 
-const MenuItem = ({ item, index }) => (
-  <div className={"item " + (index % 2 === 0 ? "odd" : "even")}>
-    <div className="title-box">
-      <div className="title">{item.title}</div>
-      <div className="dot-box">
-        <div>{`.`.repeat(140)}</div>
+const MenuItem = ({ item, index }) => {
+  const arrayTitle = item.title.split(/ \/ | or /gi);
+  // console.log(arrayTitle, arrayTitle.length);
+  return (
+    <div className={"item " + (index % 2 === 0 ? "odd" : "even")}>
+      <div className="title-box">
+        <div className="title">
+          {arrayTitle.length > 1 ? (
+            <>
+              {arrayTitle.map((t, i) => (
+                <div key={uuid.v4()}>
+                  {t} {i + 1 < arrayTitle.length && <> or</>}
+                </div>
+              ))}
+            </>
+          ) : (
+            <>
+              {arrayTitle.map(t => (
+                <div key={uuid.v4()}>{t}</div>
+              ))}
+            </>
+          )}
+        </div>
+        <div className="dot-box">
+          <div>{`.`.repeat(140)}</div>
+        </div>
+        <div className="price">{item.price}</div>
       </div>
-      <div className="price">{item.price}</div>
+      {item.title_desc && item.title_desc !== "" && (
+        <div className="title-desc-box">
+          <div className="title-desc">{item.title_desc}</div>
+        </div>
+      )}
+      {item.desc && item.desc !== "" && (
+        <div className="desc">
+          <em>({item.desc})</em>
+        </div>
+      )}
     </div>
-    {item.desc && item.desc !== "" && (
-      <div className="desc">
-        <em>{item.desc}</em>
-      </div>
-    )}
-  </div>
-);
+  );
+};
 
 const MenuContentWithoutImages = ({ data }) => {
-  console.log("MenuContentWithoutImages: ", data[0].size_title);
   console.log(data);
   return (
     <MenuContentWithoutImagesStyles>

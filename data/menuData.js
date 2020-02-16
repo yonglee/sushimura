@@ -16,7 +16,8 @@ export default {
       },
       {
         id: "8d55c40a-84b6-4922-a3d7-33ac793c2abe",
-        title: "Gyoza (6pcs)",
+        title: "Gyoza",
+        title_desc: "6pcs",
         desc: "",
         price: "$7.25",
         small: "",
@@ -24,7 +25,8 @@ export default {
       },
       {
         id: "60d1b02b-3f4b-42cb-b067-5ab13058471c",
-        title: "Veggie gyoza (5pcs)",
+        title: "Veggie gyoza",
+        title_desc: "5pcs",
         desc: "",
         price: "$5.95",
         small: "",
@@ -32,7 +34,8 @@ export default {
       },
       {
         id: "ed4e8d4d-a350-4eca-8894-23b32864cf62",
-        title: "Vegetable Spring Roll (6pcs)",
+        title: "Vegetable Spring Roll",
+        title_desc: "6pcs",
         desc: "",
         price: "$5.95",
         small: "",
@@ -72,8 +75,9 @@ export default {
       },
       {
         id: "2448bbbd-b0f6-48c5-94c4-e2b9117e1bfa",
-        title: "Spicy Gyoza (6pcs)",
-        desc: "Pork @ vegetable insde mixed with spicy sauce",
+        title: "Spicy Gyoza",
+        title_desc: "6pcs",
+        desc: "Pork & vegetable insde mixed with spicy sauce",
         price: "$7.95",
         small: "",
         large: ""
@@ -81,14 +85,15 @@ export default {
       {
         id: "4dfcc826-e0d0-464c-b179-24d6b4eb226f",
         title: "Chicken Karage",
-        desc: "(Boneless chicken wings)",
+        desc: "Boneless chicken wings",
         price: "$8.75",
         small: "",
         large: ""
       },
       {
         id: "a399fc0f-651f-402e-84a0-0869181c5e91",
-        title: "Takoyaki (6pcs)",
+        title: "Takoyaki",
+        title_desc: "6pcs",
         desc: "Deep fried fish cake with octopus inside",
         price: "$6.95",
         small: "",
@@ -170,7 +175,8 @@ export default {
     items: [
       {
         id: "a30092f6-fb90-44b3-8809-64b56f1755eb",
-        title: "Small Boat (40pcs)",
+        title: "Small Boat",
+        title_desc: "40pcs",
         desc:
           "14pcs assorted sahimi, 12pcs assorted nigiri, California roll, dynamite roll",
         price: "$53.95",
@@ -179,7 +185,8 @@ export default {
       },
       {
         id: "0f7ecd99-7a20-4d8c-8792-80b3a28f9641",
-        title: "Medium Boat (56pcs)",
+        title: "Medium Boat",
+        title_desc: "56pcs",
         desc:
           "18pcs assorted sashimi, 18pcs assorted nigiri, California roll, dynamite roll, yam roll",
         price: "$65.95",
@@ -188,7 +195,8 @@ export default {
       },
       {
         id: "9d7fbf87-3ef5-484a-a9f1-681de5708c3e",
-        title: "Special Boat (42pcs)",
+        title: "Special Boat",
+        title_desc: "42pcs",
         desc:
           "Las Vegas roll, krazy roll, Philadelphia roll, caterpillar roll, red dragon roll",
         price: "$55.00",
@@ -522,7 +530,8 @@ export default {
     items: [
       {
         id: "082bc51a-4f6f-43a7-83cf-8d68b43da7dc",
-        title: "Small Tray (28pcs)",
+        title: "Small Tray",
+        title_desc: "28pcs",
         desc:
           "California roll, dynamite roll, yarn roll, (Tuna, salmon, ebi, tai) 2pcs of each nigiri",
         price: "$34.95",
@@ -531,7 +540,8 @@ export default {
       },
       {
         id: "1949d5d6-6ef7-4894-b681-5cf0774c9a73",
-        title: "Medium Tray (48pcs)",
+        title: "Medium Tray",
+        title_desc: "48pcs",
         desc:
           "California roll, dynamite roll, ym roll, BC roll, alaska roll, (Tuna, salmon, AT salmon, AT salmon, ebi, tai, ika, SP tuna) 2pcs of each nigiri",
         price: "$48.95",
@@ -540,7 +550,8 @@ export default {
       },
       {
         id: "1ba5a29b-bae5-4107-874b-a7999af0b604",
-        title: "Large Tray (66pcs)",
+        title: "Large Tray",
+        title_desc: "66pcs",
         desc:
           "California roll, dynamite roll, yam roll, BC roll, alaska roll, SP tuna roll, (Tuna, salmon, AT salmon, ebi, tai, hokigai, ika, SP tuna) 3pcs of each nigiri",
         price: "$61.95",
@@ -549,7 +560,8 @@ export default {
       },
       {
         id: "ce3401d3-0bb1-4624-9da9-9241d5b6e3be",
-        title: "Roll Tray (50pcs)",
+        title: "Roll Tray",
+        title_desc: "50pcs",
         desc:
           "California roll, dynamite roll, yam roll, BC roll, alaska roll, SP tuna roll, salmon avocado roll",
         price: "$38.95",
@@ -558,7 +570,8 @@ export default {
       },
       {
         id: "29c4d876-c4a5-4c33-835d-df96de03095b",
-        title: "Maximum Tray (118pcs)",
+        title: "Maximum Tray",
+        title_desc: "118pcs",
         desc:
           "California roll, dynamite roll, yam roll, BC roll, alaska roll, SP tuna roll, salmon avocado roll, tuna avocado roll, chicken roll, beef roll, salmon roll, kappa roll, tamago roll, (Tuna, salmon, AT salmon, ebi, tai, hokigai, unagi, ika, SP tuna, kani) 3pcs of each nigiri",
         price: "$105.99",
@@ -567,7 +580,8 @@ export default {
       },
       {
         id: "bd2294a1-6882-47bd-a383-83e55354581b",
-        title: "Kamloops Tray (128pcs)",
+        title: "Kamloops Tray",
+        title_desc: "128pcs",
         desc:
           "California roll, alaska roll, SP tuna roll, SP salmon roll, vegetable roll, tuna & salmon roll, BBQ eel roll, chopped scallop roll, avocado roll, salmon or tuna avocado roll, SP california roll, real crab california roll, salmon or tuna cream cheese roll, smoked salmon cream cheese roll, SP scallop roll, SP tuna or SP salmon cream cheese roll",
         price: "$105.99",
@@ -576,7 +590,8 @@ export default {
       },
       {
         id: "702ce858-2c04-42c7-a474-bb68e8b73886",
-        title: "Gangster Tray (132pcs)",
+        title: "Gangster Tray",
+        title_desc: "132pcs",
         desc: "16 different kinds of special rolls",
         price: "$199.99",
         small: "",
@@ -601,8 +616,8 @@ export default {
       },
       {
         id: "e38e5d98-b918-447f-81d5-bb5cde24c5ea",
-        title: "Green Salad (With crab on top)",
-        desc: "",
+        title: "Green Salad",
+        desc: "with crab on top",
         price: "$6.95",
         small: "",
         large: ""
@@ -626,7 +641,8 @@ export default {
     items: [
       {
         id: "e59c2f05-75d5-43fc-8561-cb11c051904b",
-        title: "Tuna (10pcs)",
+        title: "Tuna",
+        title_desc: "10pcs",
         desc: "",
         price: "$19.95 / $12.95(Half)",
         small: "",
@@ -634,7 +650,8 @@ export default {
       },
       {
         id: "4b42fb12-f31c-4bc4-8a3e-1012b5ea5dff",
-        title: "Salmon (10pcs)",
+        title: "Salmon",
+        title_desc: "10pcs",
         desc: "",
         price: "$19.95 / $12.95(Half)",
         small: "",
@@ -666,7 +683,8 @@ export default {
       },
       {
         id: "4312cc4e-eb9f-4947-a35d-0d4a2a1c572f",
-        title: "Unagi Sashimi (10pcs)",
+        title: "Unagi Sashimi",
+        title_desc: "10pcs",
         desc: "",
         price: "$19.95 / $12.95(Half)",
         small: "",
@@ -674,7 +692,8 @@ export default {
       },
       {
         id: "a15188df-ac7f-4f7f-af29-24e0aeb1519a",
-        title: "Toro Sashimi (10pcs)",
+        title: "Toro Sashimi",
+        title_desc: "10pcs",
         desc: "",
         price: "$19.95 / $12.95(Half)",
         small: "",
@@ -682,7 +701,8 @@ export default {
       },
       {
         id: "06ef584d-c9f8-4186-a123-496c122c1bef",
-        title: "Tako Sashimi (10pcs)",
+        title: "Tako Sashimi",
+        title_desc: "10pcs",
         desc: "Octopus",
         price: "$19.95 / $12.95(Half)",
         small: "",
@@ -690,7 +710,8 @@ export default {
       },
       {
         id: "ead5a672-e7cc-46d0-b59e-205653686d18",
-        title: "Deluxe Sashimi (40pcs)",
+        title: "Deluxe Sashimi",
+        title_desc: "40pcs",
         desc: "",
         price: "$55.95",
         small: "",
@@ -714,7 +735,8 @@ export default {
       },
       {
         id: "30ab383a-2286-4cb2-ad5c-d7c59c154786",
-        title: "Assorted Sashimi (16pcs)",
+        title: "Assorted Sashimi",
+        title_desc: "16pcs",
         desc: "",
         price: "$25.95",
         small: "",
@@ -748,7 +770,7 @@ export default {
       {
         id: "38269569-4718-490e-a71f-f14272d59320",
         title: "Gyoza Nabe",
-        desc: "(Japanese wonton soup)",
+        desc: "Japanese wonton soup",
         price: "$5.95",
         small: "",
         large: ""
@@ -771,16 +793,16 @@ export default {
       },
       {
         id: "895fa0b8-70d7-4cc1-b9d7-393aa143fdac",
-        title: "Spicy Sunomono (Spicy sauce on top)",
-        desc: "",
+        title: "Spicy Sunomono",
+        desc: "Spicy sauce on top",
         price: "$4.75",
         small: "",
         large: ""
       },
       {
         id: "4b0a59a2-5649-4103-a390-63fd550ee196",
-        title: "Ebi Sunomono (Prawn on top)",
-        desc: "",
+        title: "Ebi Sunomono",
+        desc: "Prawn on top",
         price: "$4.95",
         small: "",
         large: ""
@@ -820,7 +842,8 @@ export default {
     items: [
       {
         id: "a4513533-3c1b-48ec-9bc9-9f9f7e0e6c30",
-        title: "Snow Dragon Roll (8pcs)",
+        title: "Snow Dragon Roll",
+        title_desc: "8pcs",
         desc:
           "2pcs Prawn tempura, crab, cucumber inside, unagi sauce and tuna with cream cheese & garlic sauce, red & green pepper on top",
         price: "$14.95",
@@ -829,7 +852,8 @@ export default {
       },
       {
         id: "db4e6e14-df2a-4e9d-924f-9fa06b23eea9",
-        title: "Las Vegas Roll (8pcs)",
+        title: "Las Vegas Roll",
+        title_desc: "8pcs",
         desc:
           "Deep fried; crab, avocado, cucumber, cream cheese, 2pcs prawn tempura with cream cheese & garlic sauce and crunchy yam on top",
         price: "$13.95",
@@ -838,7 +862,8 @@ export default {
       },
       {
         id: "784fad73-c3c4-4d29-9f1f-fe4b24441664",
-        title: "Krazy Roll (10pcs)",
+        title: "Krazy Roll",
+        title_desc: "10pcs",
         desc:
           "Deep fried California roll with baby shrimp, red & green pepper and unagi & spicy mayo sauce on top",
         price: "$14.95",
@@ -847,7 +872,8 @@ export default {
       },
       {
         id: "45fb7fea-91f5-44a9-8123-9b41bbe9badd",
-        title: "Caterpillar Roll (8pcs)",
+        title: "Caterpillar Roll",
+        title_desc: "8pcs",
         desc: "California roll with BBQ eel, unagi sauce and fish eggs on top",
         price: "$13.95",
         small: "",
@@ -855,7 +881,8 @@ export default {
       },
       {
         id: "036bfbe6-d6dc-49fd-aa23-a5d793a1ede1",
-        title: "Kiro Roll (8pcs)",
+        title: "Kiro Roll",
+        title_desc: "8pcs",
         desc:
           "Unagi tempura, cucumber inside and BBQ salmon with unagi sauce and crunchy yam on top",
         price: "$14.95",
@@ -864,7 +891,8 @@ export default {
       },
       {
         id: "81d0e187-4f92-47c0-a6f7-c65325e53e78",
-        title: "Red Dragon Roll (8pcs)",
+        title: "Red Dragon Roll",
+        title_desc: "8pcs",
         desc:
           "2pcs prawn tempura, crab, cucumber inside, unagi sauce and spicy tuna with spicy mayo sauce on top",
         price: "$14.95",
@@ -873,7 +901,8 @@ export default {
       },
       {
         id: "6bc2e2d3-946b-474a-b60c-0cf685e4d442",
-        title: "Philadelphia Roll (8pcs)",
+        title: "Philadelphia Roll",
+        title_desc: "8pcs",
         desc:
           "Crab, avocado, cucumber, salmon, cream cheese inside with smoked salmon and cream cheese sauce on top",
         price: "$13.95",
@@ -882,7 +911,8 @@ export default {
       },
       {
         id: "a0dbb36f-c72e-4666-b6b2-8c705efd2a1f",
-        title: "Rainbow Roll (8pcs)",
+        title: "Rainbow Roll",
+        title_desc: "8pcs",
         desc:
           "California roll with tuna, salmon, tai, ebi, avocado, unagi sauce and fish eggs on top",
         price: "$13.95",
@@ -891,7 +921,8 @@ export default {
       },
       {
         id: "d665e3c5-ffa0-4885-8eca-28d4f20434db",
-        title: "Mountain Roll (8pcs)",
+        title: "Mountain Roll",
+        title_desc: "8pcs",
         desc:
           "Salmon, cucumber and tempura crumb inside with crab and unagi & spicy mayo sauce on top",
         price: "$14.95",
@@ -900,7 +931,8 @@ export default {
       },
       {
         id: "1cc052f4-df87-4d37-b300-8234f3099da6",
-        title: "Lobster Roll (8pcs)",
+        title: "Lobster Roll",
+        title_desc: "8pcs",
         desc:
           "Deep fried lobster, avocado and cucumber inside with unagi & sweet chilly sauce, crunchy yam and fish eggs on top",
         price: "$18.95",
@@ -909,7 +941,8 @@ export default {
       },
       {
         id: "70d33302-04ed-410f-8d03-26604c35c4da",
-        title: "Chilliwack Roll (8pcs)",
+        title: "Chilliwack Roll",
+        title_desc: "8pcs",
         desc:
           "BBQ salmon, cream cheese inside with unagi & spicy mayo sauce and crunchy yam on top",
         price: "$11.25",
@@ -918,7 +951,8 @@ export default {
       },
       {
         id: "6cdcec9a-05b0-4cf1-a07b-f543435f5a0d",
-        title: "Mango Seven Roll (8pcs)",
+        title: "Mango Seven Roll",
+        title_desc: "8pcs",
         desc:
           "Crab, avocado, cucumber and cream cheese with mango, unagi & cream cheese sauce on top",
         price: "$15.95",
@@ -927,7 +961,8 @@ export default {
       },
       {
         id: "aa66d4bd-a8ae-4583-bb47-d868177707c7",
-        title: "Deep Fried Crab Roll (8pcs)",
+        title: "Deep Fried Crab Roll",
+        title_desc: "8pcs",
         desc:
           "Deep fried; crab, avocado, spicy tuna inside with unagi & spicy mayo sauce and crunchy yam on top",
         price: "$13.75",
@@ -936,7 +971,8 @@ export default {
       },
       {
         id: "b3f803fb-0db1-4d77-901d-b7f2f01b08ff",
-        title: "Beauty & Beast Roll (8pcs)",
+        title: "Beauty & Beast Roll",
+        title_desc: "8pcs",
         desc:
           "2pcs prawn tempura, avocado, cucumber inside with bulgogi, cream cheese sauce and green onions on top",
         price: "$18.95",
@@ -945,7 +981,8 @@ export default {
       },
       {
         id: "07d88651-cb8f-41a0-ba09-0148e8e5f3a2",
-        title: "Black Tiger Roll (8pcs)",
+        title: "Black Tiger Roll",
+        title_desc: "8pcs",
         desc:
           "California roll with mango inside and cream cheese, avocado, prawn, unagi & cream cheese sauce and fish eggs on top",
         price: "$16.25",
@@ -954,7 +991,8 @@ export default {
       },
       {
         id: "364a4f69-65b6-447b-b9df-fedeed78c31b",
-        title: "Deep Fried California Roll (8pcs)",
+        title: "Deep Fried California Roll",
+        title_desc: "8pcs",
         desc:
           "Deep fried; crab, avocado, cucumber with unagi & spicy mayo sauce and crunchy yam on top",
         price: "$9.95",
@@ -963,7 +1001,8 @@ export default {
       },
       {
         id: "51083698-4845-4e6a-a7f8-a6a247c58ba6",
-        title: "Spider Roll (8pcs)",
+        title: "Spider Roll",
+        title_desc: "8pcs",
         desc:
           "Soft shell crab tempura, avocado, cucumber inside with unagi & sweet chilly6 sauce and crunchy yam on top",
         price: "$18.95",
@@ -972,7 +1011,8 @@ export default {
       },
       {
         id: "f5faea12-e56e-4842-9577-32d50a9b76b9",
-        title: "Kim Bob Roll (10pcs)",
+        title: "Kim Bob Roll",
+        title_desc: "10pcs",
         desc:
           "Crab, avocado, cucumber, beef, yam, carrot, masago, tamago, cooked tuna mix",
         price: "$12.95",
@@ -981,7 +1021,8 @@ export default {
       },
       {
         id: "13820df4-a585-4556-8d73-4adb0773be5f",
-        title: "Calamari Roll (8pcs)",
+        title: "Calamari Roll",
+        title_desc: "8pcs",
         desc:
           "Cucumber, avocado, calamari and crunchy yam with sweet chilly sauce on top",
         price: "$15.95",
@@ -990,7 +1031,8 @@ export default {
       },
       {
         id: "b162667e-6489-4696-8a44-22e0794f6195",
-        title: "Tuna Mix Roll (8pcs)",
+        title: "Tuna Mix Roll",
+        title_desc: "8pcs",
         desc:
           "Avocado, cucumber, yam inside with unagi sauce, cooked tuna mix, Sriracha sauce and green onions on top",
         price: "$12.95",
@@ -999,7 +1041,8 @@ export default {
       },
       {
         id: "283876bf-5c07-498d-9504-8e25bf40ecdd",
-        title: "Big Fire Roll (8pcs)",
+        title: "Big Fire Roll",
+        title_desc: "8pcs",
         desc:
           "2pcs prawn tempura, crab, cucumber inside with unagi & spicy mayo sauce, spicy cooked tuna, Sriracha sauce and green onions on top",
         price: "$14.95",
@@ -1096,9 +1139,10 @@ export default {
       },
       {
         id: "4abaca90-72ca-4ffb-b5f3-9dbf81749f0d",
-        title: "Nigiri Sushi Combo (11pcs)",
+        title: "Nigiri Sushi Combo",
+        title_desc: "11pcs",
         desc:
-          "(Tuna, salmon, AT salmon, ebi, tai, hokigai, unagi, ika, tako, SP tuna, tamago) 1pc each",
+          "1pc each, Tuna, salmon, AT salmon, ebi, tai, hokigai, unagi, ika, tako, SP tuna, tamago",
         price: "$14.75",
         small: "",
         large: ""
@@ -1135,7 +1179,8 @@ export default {
         items: [
           {
             id: "3dc7be3c-e536-4666-be73-e95ce31ccaea",
-            title: "Kappa Roll (Cucumber)",
+            title: "Kappa Roll",
+            title_desc: "(Cucumber)",
             desc: "",
             price: "$3.95",
             small: "",
@@ -1143,7 +1188,8 @@ export default {
           },
           {
             id: "c55bf739-5b2f-49bf-8872-dae25080d477",
-            title: "Sake Roll (Salmon)",
+            title: "Sake Roll",
+            title_desc: "(Salmon)",
             desc: "",
             price: "$3.95",
             small: "",
@@ -1151,7 +1197,8 @@ export default {
           },
           {
             id: "35fb45e9-416d-431e-8fa7-25b96dff4405",
-            title: "Negitoro Roll (Tuna belly & green onion)",
+            title: "Negitoro Roll",
+            title_desc: "(Tuna belly & green onion)",
             desc: "",
             price: "$3.95",
             small: "",
@@ -1159,7 +1206,8 @@ export default {
           },
           {
             id: "9e22ec8a-f0e0-4baf-af66-9ea98fbee3dc",
-            title: "Gomae Roll (Spinach in black sesame sauce)",
+            title: "Gomae Roll",
+            title_desc: "(Spinach in black sesame sauce)",
             desc: "",
             price: "$3.95",
             small: "",
@@ -1167,7 +1215,8 @@ export default {
           },
           {
             id: "d0156436-0d12-4d1d-8f7a-49811c2ba58b",
-            title: "Inari Roll (Tofu pouch)",
+            title: "Inari Roll",
+            title_desc: "(Tofu pouch)",
             desc: "",
             price: "$3.95",
             small: "",
@@ -1183,7 +1232,8 @@ export default {
           },
           {
             id: "b4c882ba-fe46-499c-b524-6835caf67ba4",
-            title: "Tamago Roll (Egg)",
+            title: "Tamago Roll",
+            title_desc: "(Egg)",
             desc: "",
             price: "$3.95",
             small: "",
@@ -1191,7 +1241,8 @@ export default {
           },
           {
             id: "fa8b17f2-4a85-4d07-8463-115a21a56960",
-            title: "Tako Roll (Octopus)",
+            title: "Tako Roll",
+            title_desc: "(Octopus)",
             desc: "",
             price: "$3.95",
             small: "",
@@ -1199,7 +1250,8 @@ export default {
           },
           {
             id: "94a0f676-72f0-4d95-b2b0-3a3bbcc3b9ed",
-            title: "Ika Roll (Squid & fish eggs)",
+            title: "Ika Roll",
+            title_desc: "(Squid & fish eggs)",
             desc: "",
             price: "$3.95",
             small: "",
@@ -1213,7 +1265,8 @@ export default {
         items: [
           {
             id: "4ad1c46c-a3a4-45ca-9241-f5ea1e4207e3",
-            title: "Vegetable Roll (Yam, carrot, avocado, cucumber)",
+            title: "Vegetable Roll",
+            title_desc: "(Yam, carrot, avocado, cucumber)",
             desc: "",
             price: "$4.95",
             small: "",
@@ -1221,7 +1274,8 @@ export default {
           },
           {
             id: "ca39e08a-d732-4599-9cf6-dd6f9d02db87",
-            title: "California Roll (Crab, avocado, cucumber)",
+            title: "California Roll",
+            title_desc: "(Crab, avocado, cucumber)",
             desc: "",
             price: "$5.25",
             small: "",
@@ -1237,7 +1291,8 @@ export default {
           },
           {
             id: "586bafc3-6074-499f-ad6a-eeadf236b7a6",
-            title: "Avocado Roll (Cucumber)",
+            title: "Avocado Roll",
+            title_desc: "(Cucumber)",
             desc: "",
             price: "$5.25",
             small: "",
@@ -1253,7 +1308,8 @@ export default {
           },
           {
             id: "2f6b6555-5cc7-44f3-b41f-47fd2c3160d0",
-            title: "Spicy Salmon Roll (Cucumber)",
+            title: "Spicy Salmon Roll",
+            title_desc: "(Cucumber)",
             desc: "",
             price: "$6.95",
             small: "",
@@ -1261,7 +1317,8 @@ export default {
           },
           {
             id: "3ad7e5d5-d107-4d16-b2b6-b7cc5f3e7809",
-            title: "Tuna & Salmon Roll (Cucumber)",
+            title: "Tuna & Salmon Roll",
+            title_desc: "(Cucumber)",
             desc: "",
             price: "$6.95",
             small: "",
@@ -1269,7 +1326,8 @@ export default {
           },
           {
             id: "facfe901-2822-460c-b2db-33d8b4c3a02c",
-            title: "Salmon or Tuna Avocado Roll (Cucumber)",
+            title: "Salmon or Tuna Avocado Roll",
+            title_desc: "(Cucumber)",
             desc: "",
             price: "$6.95",
             small: "",
@@ -1277,7 +1335,8 @@ export default {
           },
           {
             id: "130d4425-a83f-41b2-ad8e-7cc06d47d329",
-            title: "Salmon or Tuna Cream Cheese Roll (Cucumber)",
+            title: "Salmon or Tuna Cream Cheese Roll",
+            title_desc: "(Cucumber)",
             desc: "",
             price: "$6.95",
             small: "",
@@ -1285,7 +1344,8 @@ export default {
           },
           {
             id: "ab7c63f7-650b-42fd-afa2-a7ebc344f6c5",
-            title: "Smoked Salmon Cream Cheese Roll (Cucumber)",
+            title: "Smoked Salmon Cream Cheese Roll",
+            title_desc: "(Cucumber)",
             desc: "",
             price: "$6.95",
             small: "",
@@ -1293,7 +1353,8 @@ export default {
           },
           {
             id: "b3bedc97-aa5f-4a98-8558-bf94ad5ea60c",
-            title: "Spicy Scallop Roll (Fish eggs, cucumber, tempura crumb)",
+            title: "Spicy Scallop Roll",
+            title_desc: "(Fish eggs, cucumber, tempura crumb)",
             desc: "",
             price: "$6.95",
             small: "",
@@ -1301,7 +1362,8 @@ export default {
           },
           {
             id: "95dbfa6f-cc9f-49e9-b484-3c80de897546",
-            title: "Spicy Tuna or Salmon Cream Cheese Roll (Cucumber)",
+            title: "Spicy Tuna or Salmon Cream Cheese Roll",
+            title_desc: "(Cucumber)",
             desc: "",
             price: "$6.95",
             small: "",
@@ -1347,7 +1409,8 @@ export default {
         items: [
           {
             id: "2f853b69-978d-4f15-ab23-7fc6486b4b13",
-            title: "Dynamite Roll (Prawn tempura, crab, avocado, cucumer)",
+            title: "Dynamite Roll",
+            title_desc: "(Prawn tempura, crab, avocado, cucumer)",
             desc: "",
             price: "$6.95",
             small: "",
@@ -1363,7 +1426,8 @@ export default {
           },
           {
             id: "9c186a8a-75ce-41b1-b8e8-15b0547c8a16",
-            title: "Double Dynamite Roll (2pcs Prawn tempura)",
+            title: "Double Dynamite Roll",
+            title_desc: "(2pcs Prawn tempura)",
             desc: "",
             price: "$7.95",
             small: "",
@@ -1379,7 +1443,8 @@ export default {
           },
           {
             id: "cdfc3540-cae7-4207-b6e3-152f9106518f",
-            title: "BC Roll (BBQ salmon, cucumber, tempura crumb)",
+            title: "BC Roll",
+            title_desc: "(BBQ salmon, cucumber, tempura crumb)",
             desc: "",
             price: "$6.95",
             small: "",
@@ -1387,7 +1452,8 @@ export default {
           },
           {
             id: "aa00c3c0-5bde-4c5e-bcd9-fc6451b0658e",
-            title: "Yam Roll (Deep fried yam, cucumber)",
+            title: "Yam Roll",
+            title_desc: "(Deep fried yam, cucumber)",
             desc: "",
             price: "$6.95",
             small: "",
@@ -1430,7 +1496,8 @@ export default {
     items: [
       {
         id: "df11749e-2439-44fd-8ea9-39e3acf59157",
-        title: "Yam Tempura (6pcs)",
+        title: "Yam Tempura",
+        title_desc: "6pcs",
         desc: "",
         price: "$8.25",
         small: "",
@@ -1438,7 +1505,8 @@ export default {
       },
       {
         id: "250bb1dd-0ad6-465d-be0e-f1516ee4b8e7",
-        title: "Prawn Tempura (4pcs)",
+        title: "Prawn Tempura",
+        title_desc: "4pcs",
         desc: "",
         price: "$7.50",
         small: "",
@@ -1446,7 +1514,8 @@ export default {
       },
       {
         id: "e686dbb4-130a-46c2-bf35-9b7dd52ca089",
-        title: "Prawn Tempura (6pcs)",
+        title: "Prawn Tempura",
+        title_desc: "6pcs",
         desc: "",
         price: "$9.99",
         small: "",
@@ -1454,7 +1523,8 @@ export default {
       },
       {
         id: "14ff4c38-d6ae-45ae-9839-2a1d9d273a03",
-        title: "Vegetable Tempura (6pcs)",
+        title: "Vegetable Tempura",
+        title_desc: "6pcs",
         desc: "",
         price: "$7.75",
         small: "",
@@ -1462,7 +1532,8 @@ export default {
       },
       {
         id: "e963aaa2-1dd1-4fe3-98fc-f6abc74e467d",
-        title: "Deluxe Tempura (20pcs)",
+        title: "Deluxe Tempura",
+        title_desc: "20pcs",
         desc: "",
         price: "$21.95",
         small: "",
@@ -1470,7 +1541,8 @@ export default {
       },
       {
         id: "f2fd4180-f5b8-4011-bad2-20b4414eb4d5",
-        title: "Kani Kani (5pcs crab sticks)",
+        title: "Kani Kani",
+        title_desc: "5pcs crab sticks",
         desc: "",
         price: "$6.95",
         small: "",
@@ -1478,7 +1550,8 @@ export default {
       },
       {
         id: "c67501c5-2694-4d35-9b81-a9c2c5f431f1",
-        title: "Unagi Tempura (6pcs BBq eel)",
+        title: "Unagi Tempura",
+        title_desc: "6pcs BBQ eel",
         desc: "",
         price: "$13.95",
         small: "",
@@ -1494,7 +1567,8 @@ export default {
       },
       {
         id: "86156e84-ed98-482d-a1ef-9dbc8caa9a4f",
-        title: "Kale Tempura (7pcs)",
+        title: "Kale Tempura",
+        title_desc: "7pc",
         desc: "",
         price: "$4.95",
         small: "",
