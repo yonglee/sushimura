@@ -60,6 +60,19 @@ const MenuContentsStyles = styled.div`
     }
   }
 
+  .menu-line-box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      img {
+        display: block;
+        width: 100%;
+        max-width: 240px;
+        height: auto;
+      }
+    }
+
   .menu-contents-box {
     margin: 1rem 1rem 0 1rem;
     .menu-desc, .menu-desc2 {

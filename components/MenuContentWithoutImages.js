@@ -8,13 +8,18 @@ const MenuItem = ({ item, index }) => {
   // console.log(arrayTitle, arrayTitle.length);
   return (
     <div className={"item " + (index % 2 === 0 ? "odd" : "even")}>
+      {item.small !== "" && (
+        <div className="image-box">
+          <img src={item.small} />
+        </div>
+      )}
       <div className="title-box">
         <div className="title">
           {arrayTitle.length > 1 ? (
             <>
               {arrayTitle.map((t, i) => (
-                <div key={uuid.v4()}>
-                  {t} {i + 1 < arrayTitle.length && <> or</>}
+                <div key={uuid.v4()} className="long-title">
+                  {t} {i + 1 < arrayTitle.length && <> /</>}
                 </div>
               ))}
             </>
@@ -63,11 +68,22 @@ const MenuContentWithoutImages = ({ data }) => {
           ))}
         </>
       ) : (
-        <div className="items">
-          {data.map((item, index) => (
-            <MenuItem key={item.id} item={item} index={index} />
-          ))}
-        </div>
+        <>
+          <div className="items">
+            {data
+              .filter(dataItem => dataItem.small !== "")
+              .map((item, index) => (
+                <MenuItem key={item.id} item={item} index={index} />
+              ))}
+          </div>
+          <div className="items">
+            {data
+              .filter(dataItem => dataItem.small === "")
+              .map((item, index) => (
+                <MenuItem key={item.id} item={item} index={index} />
+              ))}
+          </div>
+        </>
       )}
     </MenuContentWithoutImagesStyles>
   );

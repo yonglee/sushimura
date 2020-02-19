@@ -6,11 +6,11 @@ import MenuContentWithoutImages from "../components/MenuContentWithoutImages";
 // import menuData from "../data/menuData";
 
 const MenuContents = ({ data }) => {
-  const withoutImages =
-    data.items[0].size_title && data.items[0].size_title !== ""
-      ? data.items
-      : data.items.filter(item => item.small === "");
-
+  // const withoutImages =
+  //   data.items[0].size_title && data.items[0].size_title !== ""
+  //     ? data.items
+  //     : data.items.filter(item => item.small === "");
+  // console.log(data.items.filter(item => item.small !== ""));
   return (
     <MenuContentsStyles>
       <div className="menu-title-box">
@@ -22,6 +22,9 @@ const MenuContents = ({ data }) => {
             alt="Sushi Mura Logo"
           />
         </div> */}
+      </div>
+      <div className="menu-line-box">
+        <img src="/menu/menu-line.png" />
       </div>
       {data.desc !== "" && (
         <div className="menu-contents-box">
@@ -39,7 +42,8 @@ const MenuContents = ({ data }) => {
           )}
         </div>
       )}
-      <MenuContentWithoutImages data={withoutImages} key={data.id} />
+      {/* <MenuContentWithoutImages data={withoutImages} key={data.id} /> */}
+      <MenuContentWithoutImages data={data.items} key={data.id} />
     </MenuContentsStyles>
   );
 };

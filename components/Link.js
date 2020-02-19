@@ -7,10 +7,15 @@ export default ({ href, children }) => {
   let className = children.props.className || "";
   if (router.pathname === href) {
     className = `${className} selected`;
+    // } else if (
+    //   router.pathname.includes("/menus") &&
+    //   router.pathname !== "/" &&
+    //   (href === "/menu" || href.includes("/m/"))
+    // ) {
   } else if (
-    router.pathname.includes("/menus") &&
+    router.pathname.includes("/menu") &&
     router.pathname !== "/" &&
-    (href === "/menu" || href.includes("/m/"))
+    (href === "/menu" || href.includes("/menu/"))
   ) {
     className = `${className} selected`;
   }

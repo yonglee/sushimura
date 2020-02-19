@@ -1,0 +1,6 @@
+Sitemap: https://yonglee.ca/api/posts-sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*

@@ -10,28 +10,38 @@ const seoHead = {
   description: "Test Menu Page"
 };
 
-const Menu = props => {
-  if (typeof window !== "undefined") {
-    Router.push(`/menus?title=special%20roll`, `/m/special-roll`);
-    return null;
-  }
+const Menu = ({ path }) => {
+  // if (typeof window !== "undefined") {
+  //   Router.push(`/menus?title=special%20roll`, `/m/special-roll`);
+  //   return null;
+  // }
   return (
-    <>
+    <div className="menu-page-wrapper">
       {/* <Head {...seoHead} /> */}
-      {/* <MenuNav /> */}
-    </>
+      <div className="menu-content-container">
+        <MenuNav path={path} />
+      </div>
+    </div>
   );
 };
 
-Menu.getInitialProps = async ctx => {
-  // console.log("get initial menu", ctx);
-  if (ctx.res) {
-    await ctx.res.writeHead(302, {
-      Location: "/m/special-roll"
-    });
-    ctx.res.end();
-  }
-  return {};
+Menu.propTypes = {
+  path: PropTypes.string.isRequired
 };
+
+Menu.getInitialProps = async ctx => {
+  return { path: ctx.asPath };
+};
+
+// Menu.getInitialProps = async ctx => {
+//   // console.log("get initial menu", ctx);
+//   if (ctx.res) {
+//     await ctx.res.writeHead(302, {
+//       Location: "/m/special-roll"
+//     });
+//     ctx.res.end();
+//   }
+//   return {};
+// };
 
 export default withRouter(Menu);

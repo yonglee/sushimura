@@ -20,7 +20,7 @@ export default {
         title_desc: "6pcs",
         desc: "",
         price: "$7.25",
-        small: "",
+        small: "/menu/appetizer/gyoza.jpg",
         large: ""
       },
       {
@@ -70,7 +70,7 @@ export default {
         title: "Agedashi Tofu",
         desc: "Deep fried tofu",
         price: "$5.95",
-        small: "",
+        small: "/menu/appetizer/agedashi-tofu.jpg",
         large: ""
       },
       {
@@ -87,7 +87,7 @@ export default {
         title: "Chicken Karage",
         desc: "Boneless chicken wings",
         price: "$8.75",
-        small: "",
+        small: "/menu/appetizer/chicken-karage.jpg",
         large: ""
       },
       {
@@ -96,7 +96,7 @@ export default {
         title_desc: "6pcs",
         desc: "Deep fried fish cake with octopus inside",
         price: "$6.95",
-        small: "",
+        small: "/menu/appetizer/takoyaki.jpg",
         large: ""
       },
       {
@@ -104,7 +104,7 @@ export default {
         title: "Kushiyaki",
         desc: "Grilled prawn, scallop, pepper on skewers",
         price: "$10.75",
-        small: "",
+        small: "/menu/appetizer/kushiyaki.jpg",
         large: ""
       },
       {
@@ -112,7 +112,7 @@ export default {
         title: "Gomae",
         desc: "Spinach salad with special black sesame sauce",
         price: "$5.95",
-        small: "",
+        small: "/menu/appetizer/gomae.jpg",
         large: ""
       },
       {
@@ -120,7 +120,7 @@ export default {
         title: "Appetizer Sashimi",
         desc: "Tuna, salmon, AT salmon, tai",
         price: "$10.95",
-        small: "",
+        small: "/menu/appetizer/appetizer-sashimi.jpg",
         large: ""
       },
       {
@@ -128,7 +128,7 @@ export default {
         title: "Lobster Karage",
         desc: "",
         price: "$15.25",
-        small: "",
+        small: "/menu/appetizer/lobster-karage.jpg",
         large: ""
       }
     ]
@@ -145,7 +145,7 @@ export default {
         title: "Bulgogi Soup Combo",
         desc: "Korean-style marinated slices of beef in soup",
         price: "$18.95",
-        small: "",
+        small: "/menu/bbq-combo/bulgogi-soup-combo.jpg",
         large: ""
       },
       {
@@ -161,7 +161,7 @@ export default {
         title: "Ribs Combo",
         desc: "Korean-style marinated beef short ribs",
         price: "$19.95",
-        small: "",
+        small: "/menu/bbq-combo/ribs-combo.jpg",
         large: ""
       }
     ]
@@ -180,7 +180,7 @@ export default {
         desc:
           "14pcs assorted sahimi, 12pcs assorted nigiri, California roll, dynamite roll",
         price: "$53.95",
-        small: "",
+        small: "/menu/boat/small-boat.jpg",
         large: ""
       },
       {
@@ -190,7 +190,7 @@ export default {
         desc:
           "18pcs assorted sashimi, 18pcs assorted nigiri, California roll, dynamite roll, yam roll",
         price: "$65.95",
-        small: "",
+        small: "/menu/boat/medium-boat.jpg",
         large: ""
       },
       {
@@ -200,7 +200,7 @@ export default {
         desc:
           "Las Vegas roll, krazy roll, Philadelphia roll, caterpillar roll, red dragon roll",
         price: "$55.00",
-        small: "",
+        small: "/menu/boat/special-boat.jpg",
         large: ""
       }
     ]
@@ -213,12 +213,28 @@ export default {
     href: "/m/dinner",
     items: [
       {
+        id: "08423074-ca63-43da-9893-ab81e5f31a13",
+        title: "Sashimi Dinner",
+        desc: "12pcs assorted sashimi and rice",
+        price: "$25.95",
+        small: "/menu/dinner/sashimi-dinner.jpg",
+        large: ""
+      },
+      {
+        id: "5f262464-c6df-4ce1-a8f8-9519f3875e50",
+        title: "Tempura Dinner",
+        desc: "Tempura (2pcs prawns, 2pcs fish, 5pcs vegetables) and rice",
+        price: "$18.95",
+        small: "/menu/dinner/tempura-dinner.jpg",
+        large: ""
+      },
+      {
         id: "d180d10f-dcc0-4c0f-9b22-afef490f505c",
         title: "Dinner Box A",
         desc:
           "Chicken teriyaki, assorted tempura, california roll, salad and fruit",
         price: "$23.95",
-        small: "",
+        small: "/menu/dinner/dinner-box-a.jpg",
         large: ""
       },
       {
@@ -245,22 +261,6 @@ export default {
         desc:
           "Vegetable teriyaki, vegetable tempura, vegetable roll, salad and fruit",
         price: "$12.25",
-        small: "",
-        large: ""
-      },
-      {
-        id: "08423074-ca63-43da-9893-ab81e5f31a13",
-        title: "Sashimi Dinner",
-        desc: "12pcs assorted sashimi and rice",
-        price: "$25.95",
-        small: "",
-        large: ""
-      },
-      {
-        id: "5f262464-c6df-4ce1-a8f8-9519f3875e50",
-        title: "Tempura Dinner",
-        desc: "Tempura (2pcs prawns, 2pcs fish, 5pcs vegetables) and rice",
-        price: "$18.95",
         small: "",
         large: ""
       }
@@ -294,7 +294,7 @@ export default {
         title: "Beef Donburi",
         desc: "Rice, vegetables, steamed egg",
         price: "$13.50",
-        small: "",
+        small: "/menu/donburi/beef-donburi.jpg",
         large: ""
       },
       {
@@ -310,7 +310,7 @@ export default {
         title: "Chirashi Donburi",
         desc: "Sushi rice with assorted sashimi",
         price: "$20.95",
-        small: "",
+        small: "/menu/donburi/chirashi-donburi.jpg",
         large: ""
       },
       {
@@ -318,7 +318,7 @@ export default {
         title: "Unagi Donburi",
         desc: "Sushi rice with BBQ eel",
         price: "$20.95",
-        small: "",
+        small: "/menu/donburi/unagi-donburi.jpg",
         large: ""
       },
       {
@@ -326,7 +326,7 @@ export default {
         title: "Tuna & Salmon Donburi",
         desc: "Sushi rice with tuna & salmon",
         price: "$20.95",
-        small: "",
+        small: "/menu/donburi/tuna-and-salmon-donburi.jpg",
         large: ""
       }
     ]
@@ -343,7 +343,7 @@ export default {
         title: "Lunch Box A",
         desc: "Chicken teriyaki, assorted tempura, california roll and salad",
         price: "$13.95",
-        small: "",
+        small: "/menu/lunch-box/lunch-box-a.jpg",
         large: ""
       },
       {
@@ -352,7 +352,7 @@ export default {
         desc:
           "Beef teriyaki, assorted tempura, assorted nigiri (Tuna, salmon, ebi) and salad",
         price: "$14.25",
-        small: "",
+        small: "/menu/lunch-box/lunch-box-b.jpg",
         large: ""
       },
       {
@@ -361,7 +361,7 @@ export default {
         desc:
           "Salmon teriyaki, assorted tempura, sashimi (2pcs tuna, 2pcs salmon) and salad",
         price: "$14.25",
-        small: "",
+        small: "/menu/lunch-box/lunch-box-c.jpg",
         large: ""
       },
       {
@@ -369,7 +369,7 @@ export default {
         title: "Lunch Box D",
         desc: "Vegetable teriyaki, vegetable tempura, vegetable roll and salad",
         price: "$12.25",
-        small: "",
+        small: "/menu/lunch-box/lunch-box-d.jpg",
         large: ""
       }
     ]
@@ -399,7 +399,7 @@ export default {
       },
       {
         id: "12970f91-79c8-401a-af94-858d53117e30",
-        title: "Hokigai (Surf clam) / Saba (Mackerel) / Spicy Chopped Scallop",
+        title: "Saba (Mackerel) / Spicy Chopped Scallop",
         desc: "",
         price: "$2.95",
         small: "",
@@ -407,7 +407,7 @@ export default {
       },
       {
         id: "d528fa5a-cdc6-4f5a-8689-ed1d2e4018c3",
-        title: "Unagi (BBQ eel) / Tako (Octopus) / Toro (Tuna belly)",
+        title: "Tako (Octopus) / Toro (Tuna belly)",
         desc: "",
         price: "$2.95",
         small: "",
@@ -423,10 +423,12 @@ export default {
       },
       {
         id: "b06e3c9e-0336-47d6-8317-7131e4d2d16f",
-        title: "Wild Salmon / Atlantic Salmon / Smoked Salmon",
+        title:
+          "Wild Salmon / Atlantic Salmon / Unagi(BBq eel) / Hokigai(Surf clam)",
         desc: "",
         price: "$2.95",
-        small: "",
+        small:
+          "/menu/nigiri/wild-salmon-atlantic-salmon-unagi-hokigai-nigiri.jpg",
         large: ""
       },
       {
@@ -434,15 +436,16 @@ export default {
         title: "Tuna Tataki / Salmon Tataki / Prawn Tempura",
         desc: "",
         price: "$2.95",
-        small: "",
+        small:
+          "/menu/nigiri/tuna-tataki-salmon-tataki-prawn-tempura-nigiri.jpg",
         large: ""
       },
       {
         id: "7df80359-24eb-4e71-943e-bd7e1bd433e6",
-        title: "Chopped Scallop / Masago / Spicy Tuna / BC",
+        title: "Smoked Salmon / Chopped Scallop / Masago / Spicy Tuna / BC",
         desc: "",
         price: "$2.95",
-        small: "",
+        small: "/menu/nigiri/chopped-scallop-masago-spicy-tuna-bc-nigiri.jpg",
         large: ""
       }
     ]
@@ -459,7 +462,7 @@ export default {
         title: "Beef Yakisoba",
         desc: "",
         price: "$13.75",
-        small: "",
+        small: "/menu/noodle/beef-yakisoba.jpg",
         large: ""
       },
       {
@@ -507,7 +510,7 @@ export default {
         title: "Chicken Yakisoba",
         desc: "",
         price: "$13.75",
-        small: "",
+        small: "/menu/noodle/chicken-yakisoba.jpg",
         large: ""
       },
       {
@@ -516,7 +519,7 @@ export default {
         desc:
           "Korean-style pan-fried glass noodles with onion, green & red pepper, beef, spinach, mushrooms",
         price: "$13.95",
-        small: "",
+        small: "/menu/noodle/japchae.jpg",
         large: ""
       }
     ]
@@ -619,7 +622,7 @@ export default {
         title: "Green Salad",
         desc: "with crab on top",
         price: "$6.95",
-        small: "",
+        small: "/menu/salad/green-salad-with-crab-on-top.jpg",
         large: ""
       },
       {
@@ -627,7 +630,7 @@ export default {
         title: "Seaweed Salad",
         desc: "",
         price: "$6.50",
-        small: "",
+        small: "/menu/salad/seaweed-salad.jpg",
         large: ""
       }
     ]
@@ -714,7 +717,7 @@ export default {
         title_desc: "40pcs",
         desc: "",
         price: "$55.95",
-        small: "",
+        small: "/menu/sashimi/deluxe-sashimi.jpg",
         large: ""
       },
       {
@@ -722,7 +725,7 @@ export default {
         title: "Spicy Assorted Sashimi",
         desc: "",
         price: "$25.95",
-        small: "",
+        small: "/menu/sashimi/spicy-assorted-sashimi.jpg",
         large: ""
       },
       {
@@ -730,7 +733,7 @@ export default {
         title: "Tuna & Salmon Sashimi",
         desc: "5pcs each",
         price: "$19.95 / $12.95(Half)",
-        small: "",
+        small: "/menu/sashimi/tuna-salmon-sashimi.jpg",
         large: ""
       },
       {
@@ -739,7 +742,7 @@ export default {
         title_desc: "16pcs",
         desc: "",
         price: "$25.95",
-        small: "",
+        small: "/menu/sashimi/assorted-sashimi.jpg",
         large: ""
       },
       {
@@ -747,7 +750,7 @@ export default {
         title: "Salmon Tataki",
         desc: "Grilled salmon",
         price: "$19.95 / $12.95(Half)",
-        small: "",
+        small: "/menu/sashimi/salmon-tataki.jpg",
         large: ""
       },
       {
@@ -755,7 +758,7 @@ export default {
         title: "Tuna Tataki",
         desc: "Grilled tuna",
         price: "$19.95 / $12.95(Half)",
-        small: "",
+        small: "/menu/sashimi/tuna-tataki.jpg",
         large: ""
       }
     ]
@@ -772,7 +775,7 @@ export default {
         title: "Gyoza Nabe",
         desc: "Japanese wonton soup",
         price: "$5.95",
-        small: "",
+        small: "/menu/soup/gyoza-nabe.jpg",
         large: ""
       },
       {
@@ -820,7 +823,7 @@ export default {
         title: "Crab Sunomono",
         desc: "Stick crab on top",
         price: "$4.95",
-        small: "",
+        small: "/menu/soup/crab-sunomono.jpg",
         large: ""
       },
       {
@@ -1064,7 +1067,7 @@ export default {
         desc:
           "6pcs dynamite roll, (Tuna, salmon, AT salmon, ebi, tai) 1pc of each nigiri",
         price: "$14.75",
-        small: "",
+        small: "/menu/sushi-combo/dynamite-combo.jpg",
         large: ""
       },
       {
@@ -1527,7 +1530,7 @@ export default {
         title_desc: "6pcs",
         desc: "",
         price: "$7.75",
-        small: "",
+        small: "/menu/tempura/vegetable-tempura.jpg",
         large: ""
       },
       {
@@ -1545,7 +1548,7 @@ export default {
         title_desc: "5pcs crab sticks",
         desc: "",
         price: "$6.95",
-        small: "",
+        small: "/menu/tempura/kani-kani.jpg",
         large: ""
       },
       {
@@ -1554,7 +1557,7 @@ export default {
         title_desc: "6pcs BBQ eel",
         desc: "",
         price: "$13.95",
-        small: "",
+        small: "/menu/tempura/unagi-tempura.jpg",
         large: ""
       },
       {
@@ -1562,13 +1565,13 @@ export default {
         title: "Assorted Tempura",
         desc: "2pcs prawns & 4pcs vegetables",
         price: "$8.95",
-        small: "",
+        small: "/menu/tempura/assorted-tempura.jpg",
         large: ""
       },
       {
         id: "86156e84-ed98-482d-a1ef-9dbc8caa9a4f",
         title: "Kale Tempura",
-        title_desc: "7pc",
+        title_desc: "7pcs",
         desc: "",
         price: "$4.95",
         small: "",
@@ -1645,7 +1648,7 @@ export default {
         title: "Beef Teriyaki",
         desc: "",
         price: "$12.50",
-        small: "",
+        small: "/menu/teriyaki/beef-teriyaki.jpg",
         large: ""
       },
       {
@@ -1653,7 +1656,7 @@ export default {
         title: "Chicken Teriyaki",
         desc: "",
         price: "$12.50",
-        small: "",
+        small: "/menu/teriyaki/chicken-teriyaki.jpg",
         large: ""
       },
       {
@@ -1661,7 +1664,7 @@ export default {
         title: "Spicy tofu Teriyaki",
         desc: "",
         price: "$11.75",
-        small: "",
+        small: "/menu/teriyaki/spicy-tofu-teriyaki.jpg",
         large: ""
       }
     ]
@@ -1710,7 +1713,7 @@ export default {
         title: "Beef Udon",
         desc: "",
         price: "$13.95",
-        small: "",
+        small: "/menu/udon/beef-udon.jpg",
         large: ""
       },
       {
@@ -1718,7 +1721,7 @@ export default {
         title: "Tofu Udon",
         desc: "",
         price: "$11.50",
-        small: "",
+        small: "/menu/udon/tofu-udon.jpg",
         large: ""
       }
     ]

@@ -13,8 +13,7 @@ const MenuNavItem = ({ path, link }) => {
   useEffect(() => {}, []);
 
   // console.log(path, link.href, useRouter().asPath === link.href);
-
-  console.log(path, link.href, path === link.href);
+  // console.log(path, link.href, path === link.href);
 
   return (
     <li
