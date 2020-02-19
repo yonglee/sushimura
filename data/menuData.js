@@ -548,7 +548,7 @@ export default {
         desc:
           "California roll, dynamite roll, ym roll, BC roll, alaska roll, (Tuna, salmon, AT salmon, AT salmon, ebi, tai, ika, SP tuna) 2pcs of each nigiri",
         price: "$48.95",
-        small: "",
+        small: "/menu/party-tray/medium-tray.jpg",
         large: ""
       },
       {
@@ -558,7 +558,7 @@ export default {
         desc:
           "California roll, dynamite roll, yam roll, BC roll, alaska roll, SP tuna roll, (Tuna, salmon, AT salmon, ebi, tai, hokigai, ika, SP tuna) 3pcs of each nigiri",
         price: "$61.95",
-        small: "",
+        small: "/menu/party-tray/large-tray.jpg",
         large: ""
       },
       {
@@ -568,7 +568,7 @@ export default {
         desc:
           "California roll, dynamite roll, yam roll, BC roll, alaska roll, SP tuna roll, salmon avocado roll",
         price: "$38.95",
-        small: "",
+        small: "/menu/party-tray/roll-tray.jpg",
         large: ""
       },
       {
