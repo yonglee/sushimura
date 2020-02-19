@@ -131,6 +131,7 @@ const MenuContentWithoutImagesStyles = styled.div`
           max-width: 482px;
           height: auto;
           max-height: 260px;
+          filter: brightness(115%);
           border-radius: inherit;
           backface-visibility: hidden;
         }

@@ -60,9 +60,18 @@ const MenuContentWithoutImages = ({ data }) => {
             <div key={size_items.id} className="size-title-box">
               <h2 className="size-title">{size_items.size_title}</h2>
               <div className="items">
-                {size_items.items.map((item, index) => (
-                  <MenuItem key={item.id} item={item} index={index} />
-                ))}
+                {size_items.items
+                  .filter(dataItem => dataItem.small !== "")
+                  .map((item, index) => (
+                    <MenuItem key={item.id} item={item} index={index} />
+                  ))}
+              </div>
+              <div className="items">
+                {size_items.items
+                  .filter(dataItem => dataItem.small === "")
+                  .map((item, index) => (
+                    <MenuItem key={item.id} item={item} index={index} />
+                  ))}
               </div>
             </div>
           ))}

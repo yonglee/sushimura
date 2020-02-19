@@ -850,7 +850,7 @@ export default {
         desc:
           "2pcs Prawn tempura, crab, cucumber inside, unagi sauce and tuna with cream cheese & garlic sauce, red & green pepper on top",
         price: "$14.95",
-        small: "",
+        small: "/menu/special-roll/snow-dragon-roll.jpg",
         large: ""
       },
       {
@@ -860,7 +860,7 @@ export default {
         desc:
           "Deep fried; crab, avocado, cucumber, cream cheese, 2pcs prawn tempura with cream cheese & garlic sauce and crunchy yam on top",
         price: "$13.95",
-        small: "",
+        small: "/menu/special-roll/las-vegas-roll.jpg",
         large: ""
       },
       {
@@ -870,7 +870,7 @@ export default {
         desc:
           "Deep fried California roll with baby shrimp, red & green pepper and unagi & spicy mayo sauce on top",
         price: "$14.95",
-        small: "",
+        small: "/menu/special-roll/krazy-roll.jpg",
         large: ""
       },
       {
@@ -879,7 +879,7 @@ export default {
         title_desc: "8pcs",
         desc: "California roll with BBQ eel, unagi sauce and fish eggs on top",
         price: "$13.95",
-        small: "",
+        small: "/menu/special-roll/caterpillar-roll.jpg",
         large: ""
       },
       {
@@ -889,7 +889,7 @@ export default {
         desc:
           "Unagi tempura, cucumber inside and BBQ salmon with unagi sauce and crunchy yam on top",
         price: "$14.95",
-        small: "",
+        small: "/menu/special-roll/kiro-roll.jpg",
         large: ""
       },
       {
@@ -899,7 +899,7 @@ export default {
         desc:
           "2pcs prawn tempura, crab, cucumber inside, unagi sauce and spicy tuna with spicy mayo sauce on top",
         price: "$14.95",
-        small: "",
+        small: "/menu/special-roll/red-dragon-roll.jpg",
         large: ""
       },
       {
@@ -909,7 +909,7 @@ export default {
         desc:
           "Crab, avocado, cucumber, salmon, cream cheese inside with smoked salmon and cream cheese sauce on top",
         price: "$13.95",
-        small: "",
+        small: "/menu/special-roll/philadelphia-roll.jpg",
         large: ""
       },
       {
@@ -919,7 +919,7 @@ export default {
         desc:
           "California roll with tuna, salmon, tai, ebi, avocado, unagi sauce and fish eggs on top",
         price: "$13.95",
-        small: "",
+        small: "/menu/special-roll/rainbow-roll.jpg",
         large: ""
       },
       {
@@ -929,7 +929,7 @@ export default {
         desc:
           "Salmon, cucumber and tempura crumb inside with crab and unagi & spicy mayo sauce on top",
         price: "$14.95",
-        small: "",
+        small: "/menu/special-roll/mountain-roll.jpg",
         large: ""
       },
       {
@@ -939,7 +939,7 @@ export default {
         desc:
           "Deep fried lobster, avocado and cucumber inside with unagi & sweet chilly sauce, crunchy yam and fish eggs on top",
         price: "$18.95",
-        small: "",
+        small: "/menu/special-roll/lobster-roll.jpg",
         large: ""
       },
       {
@@ -949,7 +949,7 @@ export default {
         desc:
           "BBQ salmon, cream cheese inside with unagi & spicy mayo sauce and crunchy yam on top",
         price: "$11.25",
-        small: "",
+        small: "/menu/special-roll/chilliwack-roll.jpg",
         large: ""
       },
       {
@@ -959,7 +959,7 @@ export default {
         desc:
           "Crab, avocado, cucumber and cream cheese with mango, unagi & cream cheese sauce on top",
         price: "$15.95",
-        small: "",
+        small: "/menu/special-roll/mango-seven-roll.jpg",
         large: ""
       },
       {
@@ -969,7 +969,7 @@ export default {
         desc:
           "Deep fried; crab, avocado, spicy tuna inside with unagi & spicy mayo sauce and crunchy yam on top",
         price: "$13.75",
-        small: "",
+        small: "/menu/special-roll/deep-fried-crab-roll.jpg",
         large: ""
       },
       {
@@ -979,7 +979,7 @@ export default {
         desc:
           "2pcs prawn tempura, avocado, cucumber inside with bulgogi, cream cheese sauce and green onions on top",
         price: "$18.95",
-        small: "",
+        small: "/menu/special-roll/beauty-and-beast-roll.jpg",
         large: ""
       },
       {
@@ -989,7 +989,7 @@ export default {
         desc:
           "California roll with mango inside and cream cheese, avocado, prawn, unagi & cream cheese sauce and fish eggs on top",
         price: "$16.25",
-        small: "",
+        small: "/menu/special-roll/black-tiger-roll.jpg",
         large: ""
       },
       {
@@ -999,7 +999,7 @@ export default {
         desc:
           "Deep fried; crab, avocado, cucumber with unagi & spicy mayo sauce and crunchy yam on top",
         price: "$9.95",
-        small: "",
+        small: "/menu/special-roll/deep-fried-california-roll.jpg",
         large: ""
       },
       {
@@ -1009,7 +1009,7 @@ export default {
         desc:
           "Soft shell crab tempura, avocado, cucumber inside with unagi & sweet chilly6 sauce and crunchy yam on top",
         price: "$18.95",
-        small: "",
+        small: "/menu/special-roll/spider-roll.jpg",
         large: ""
       },
       {
@@ -1019,7 +1019,7 @@ export default {
         desc:
           "Crab, avocado, cucumber, beef, yam, carrot, masago, tamago, cooked tuna mix",
         price: "$12.95",
-        small: "",
+        small: "/menu/special-roll/kimbob-roll.jpg",
         large: ""
       },
       {
@@ -1029,7 +1029,7 @@ export default {
         desc:
           "Cucumber, avocado, calamari and crunchy yam with sweet chilly sauce on top",
         price: "$15.95",
-        small: "",
+        small: "/menu/special-roll/calamari-roll.jpg",
         large: ""
       },
       {
@@ -1039,7 +1039,7 @@ export default {
         desc:
           "Avocado, cucumber, yam inside with unagi sauce, cooked tuna mix, Sriracha sauce and green onions on top",
         price: "$12.95",
-        small: "",
+        small: "/menu/special-roll/tuna-mix-roll.jpg",
         large: ""
       },
       {
@@ -1049,7 +1049,7 @@ export default {
         desc:
           "2pcs prawn tempura, crab, cucumber inside with unagi & spicy mayo sauce, spicy cooked tuna, Sriracha sauce and green onions on top",
         price: "$14.95",
-        small: "",
+        small: "/menu/special-roll/big-fire-roll.jpg",
         large: ""
       }
     ]
@@ -1076,7 +1076,7 @@ export default {
         desc:
           "8pcs California roll, (Tuna, salmon, AT salmon, ebi, tai) 1pc of each nigiri",
         price: "$13.75",
-        small: "",
+        small: "/menu/sushi-combo/california-combo.jpg",
         large: ""
       },
       {
@@ -1085,7 +1085,7 @@ export default {
         desc:
           "8pcs Alaska roll, (Tuna, salmon, AT salmon, smoked salmon, tai) 1pc of each nigiri",
         price: "$14.75",
-        small: "",
+        small: "/menu/sushi-combo/alaska-combo.jpg",
         large: ""
       },
       {
@@ -1093,7 +1093,7 @@ export default {
         title: "Spicy Combo",
         desc: "8pcs SP tuna roll, 2pcs tuna nigiri, SP tuna sashimi",
         price: "$14.75",
-        small: "",
+        small: "/menu/sushi-combo/spicy-combo.jpg",
         large: ""
       },
       {
@@ -1102,7 +1102,7 @@ export default {
         desc:
           "6pcs yam roll, 8pcs avocado roll, (Cucumber, inari) 1pc of each nigiri",
         price: "$12.50",
-        small: "",
+        small: "/menu/sushi-combo/vegetable-combo.jpg",
         large: ""
       },
       {
@@ -1111,7 +1111,7 @@ export default {
         desc:
           "6pcs BC roll, (Tuna, salmon, AT salmon, tai, BC) 1pc of each nigiri",
         price: "$14.75",
-        small: "",
+        small: "/menu/sushi-combo/bc-combo.jpg",
         large: ""
       },
       {
@@ -1128,7 +1128,7 @@ export default {
         desc:
           "6pcs tuna roll, 6pcs kappa roll, 6pcs tamago roll, 6pcs salmon roll",
         price: "$11.25",
-        small: "",
+        small: "/menu/sushi-combo/small-roll-combo.jpg",
         large: ""
       },
       {
@@ -1137,7 +1137,7 @@ export default {
         desc:
           "6pcs tuna roll, 6pcs salmon roll, (2pcs tuna, 2pcs salmon, 1pc AT salmon) nigiri",
         price: "$14.75",
-        small: "",
+        small: "/menu/sushi-combo/tuna-salmon-combo.jpg",
         large: ""
       },
       {
@@ -1147,7 +1147,7 @@ export default {
         desc:
           "1pc each, Tuna, salmon, AT salmon, ebi, tai, hokigai, unagi, ika, tako, SP tuna, tamago",
         price: "$14.75",
-        small: "",
+        small: "/menu/sushi-combo/nigiri-sushi-combo.jpg",
         large: ""
       },
       {
@@ -1155,7 +1155,7 @@ export default {
         title: "Roll Combo",
         desc: "8pcs California roll, 6pcs kappa roll, 6pcs salmon roll",
         price: "$10.95",
-        small: "",
+        small: "/menu/sushi-combo/roll-combo.jpg",
         large: ""
       },
       {
@@ -1164,7 +1164,7 @@ export default {
         desc:
           "8pcs California roll, (Tuna, salmon, tai, tuna tataki) sashimi, (Tuna, salmon, AT salmon, ebi, tai, hokigai, unagi, ika, SP tuna) 1pc of each nigiri",
         price: "$25.95",
-        small: "",
+        small: "/menu/sushi-combo/mura-special-combo.jpg",
         large: ""
       }
     ]
@@ -1239,7 +1239,7 @@ export default {
             title_desc: "(Egg)",
             desc: "",
             price: "$3.95",
-            small: "",
+            small: "/menu/sushi-roll-and-cone/small-roll/tamago-roll.jpg",
             large: ""
           },
           {
@@ -1248,7 +1248,7 @@ export default {
             title_desc: "(Octopus)",
             desc: "",
             price: "$3.95",
-            small: "",
+            small: "/menu/sushi-roll-and-cone/small-roll/tako-roll.jpg",
             large: ""
           },
           {
@@ -1257,7 +1257,7 @@ export default {
             title_desc: "(Squid & fish eggs)",
             desc: "",
             price: "$3.95",
-            small: "",
+            small: "/menu/sushi-roll-and-cone/small-roll/ika-roll.jpg",
             large: ""
           }
         ]
@@ -1377,7 +1377,7 @@ export default {
             title: "BBQ eel Roll",
             desc: "BBQ eel, avocado, cucumber, egg",
             price: "$6.95",
-            small: "",
+            small: "/menu/sushi-roll-and-cone/medium-roll/bbq-eel-roll.jpg",
             large: ""
           },
           {
@@ -1385,7 +1385,8 @@ export default {
             title: "Real Crab California Roll",
             desc: "",
             price: "$8.25",
-            small: "",
+            small:
+              "/menu/sushi-roll-and-cone/medium-roll/real-crab-california-roll.jpg",
             large: ""
           },
           {
@@ -1393,7 +1394,8 @@ export default {
             title: "Chopped Scallop Roll",
             desc: "Fish eggs, cucumber, tempura crumb",
             price: "$6.95",
-            small: "",
+            small:
+              "/menu/sushi-roll-and-cone/medium-roll/chopped-scallop-roll.jpg",
             large: ""
           },
           {
@@ -1401,7 +1403,7 @@ export default {
             title: "Tuna Mayo Roll",
             desc: "Avocado, cucumber, cooked tuna mix",
             price: "$5.50",
-            small: "",
+            small: "/menu/sushi-roll-and-cone/medium-roll/tuna-mayo-roll.jpg",
             large: ""
           }
         ]
@@ -1467,7 +1469,7 @@ export default {
             title: "House Roll",
             desc: "Tuna, salmon, smoked salmon, scallop, crab, cucumber",
             price: "$7.95",
-            small: "",
+            small: "/menu/sushi-roll-and-cone/large-roll/house-roll.jpg",
             large: ""
           },
           {
@@ -1475,7 +1477,7 @@ export default {
             title: "Beef Roll",
             desc: "Avocado, cucumber, cooked tuna mix",
             price: "$6.95",
-            small: "",
+            small: "/menu/sushi-roll-and-cone/large-roll/beef-roll.jpg",
             large: ""
           },
           {
@@ -1483,7 +1485,7 @@ export default {
             title: "Tempura Roll",
             desc: "Deep fried; tuna, salmon, tai, crab, cucumber",
             price: "$8.95",
-            small: "",
+            small: "/menu/sushi-roll-and-cone/large-roll/tempura-roll.jpg",
             large: ""
           }
         ]
